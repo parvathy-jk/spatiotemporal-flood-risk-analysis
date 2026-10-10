@@ -11,7 +11,8 @@ member1_data/data/raw/elevation/*
 # Processed datasets and generated outputs
 member1_data/data/processed/*
 member1_data/hdfs/*
-
+!member1_data/hdfs/README.md
+!member1_data/hdfs/.gitkeep
 # Temporary files
 .ipynb_checkpoints/
 
