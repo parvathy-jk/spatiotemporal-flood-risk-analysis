@@ -4,3 +4,4 @@ rasterio
 xarray
 netCDF4
 matplotlib
+geopandas

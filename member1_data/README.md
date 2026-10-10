@@ -50,3 +50,44 @@ member1_data/
 │   │   └── boundary/
 │   └── processed/
 └── README.md
+## Validation Results
+
+### Rainfall
+- Source: NASA GPM IMERG daily precipitation product.
+- Sample period: 1–4 August 2025.
+- Four daily rainfall rasters were extracted and processed.
+- The processed rasters use millimetres as their documented units.
+- Fill-value handling and scale conversion are recorded in the rainfall manifest.
+- The study area is a rectangular bounding box, not an exact Kerala state polygon.
+- The four-day sample is intended for preprocessing demonstration and is not sufficient by itself for robust flood-risk modelling.
+
+### River Water Level
+- Original dataset contains 465,076 records and 23 columns.
+- Cleaned dataset contains 465,076 records.
+- No exact duplicate rows were detected during initial cleaning.
+- No duplicate station/timestamp combinations were detected.
+- Timestamp parsing and station-level temporal-gap analysis were performed.
+- Some stations have gaps exceeding 24 hours and seven days.
+- Temporal gaps are documented for downstream analysis rather than automatically filled.
+
+### Elevation
+- Fourteen Copernicus DEM tiles were combined into a raster mosaic.
+- Output CRS: EPSG:4326.
+- Mosaic extent: longitude 74–78 degrees E and latitude 8–13 degrees N.
+- Approximately 30.02% of pixels in the rectangular mosaic are missing.
+- Missing pixels have not been automatically replaced with zero.
+- Elevation coverage requires further investigation before modelling.
+
+### Validation Reports
+- `data/processed/validation_report.json`
+- `data/processed/river_timeseries_report.json`
+- `data/processed/rainfall_manifest.json`
+
+These generated reports are stored locally and excluded from Git along with processed datasets.
+
+### Limitations
+- Rainfall covers only four days.
+- The rainfall crop is rectangular rather than clipped to the exact Kerala boundary.
+- River observations contain substantial temporal gaps at some stations.
+- Elevation coverage is incomplete.
+- These limitations must be considered before combining the datasets for flood-risk analysis.
