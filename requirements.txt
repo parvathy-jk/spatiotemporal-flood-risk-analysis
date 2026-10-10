@@ -1,0 +1,6 @@
+pandas
+numpy
+rasterio
+xarray
+netCDF4
+matplotlib

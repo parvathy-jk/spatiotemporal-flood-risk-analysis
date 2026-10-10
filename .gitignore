@@ -1,0 +1,33 @@
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Original datasets: keep out of Git
+member1_data/data/raw/rainfall/*
+member1_data/data/raw/river/*
+member1_data/data/raw/elevation/*
+
+# Processed datasets and generated outputs
+member1_data/data/processed/*
+member1_data/hdfs/*
+
+# Temporary files
+.ipynb_checkpoints/
+
+
+# Raw boundary datasets
+member1_data/data/raw/boundary/*
+
+# Keep folder structure in Git without uploading data
+!member1_data/data/raw/rainfall/.gitkeep
+!member1_data/data/raw/river/.gitkeep
+!member1_data/data/raw/elevation/.gitkeep
+!member1_data/data/raw/boundary/.gitkeep
+!member1_data/data/processed/.gitkeep
+!member1_data/hdfs/.gitkeep
+
+# Python and generated files
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
