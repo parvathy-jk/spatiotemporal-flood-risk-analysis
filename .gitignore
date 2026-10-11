@@ -33,5 +33,10 @@ member1_data/data/raw/boundary/*
 __pycache__/
 .ipynb_checkpoints/
 
-
 mongodb-data/
+
+# Additional local Python environment
+.ve/
+
+# Generated MapReduce and Spark results
+results/
