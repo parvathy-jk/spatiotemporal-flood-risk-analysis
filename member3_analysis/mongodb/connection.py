@@ -1,34 +1,25 @@
 from pymongo import MongoClient
-from .config import MONGO_URI, DATABASE_NAME
+from pymongo.errors import ConnectionFailure
+
+MONGO_URI = "mongodb://127.0.0.1:27017/"
+DATABASE_NAME = "flood_risk_analysis"
 
 
 def get_database():
+    """Connect to MongoDB and return the project database."""
     client = MongoClient(
         MONGO_URI,
         serverSelectionTimeoutMS=5000
     )
 
-    # Verify the server is reachable.
-    client.admin.command("ping")
-
-    database = client[DATABASE_NAME]
-
-    return client, database
-
-
-if __name__ == "__main__":
-    client = None
-
     try:
-        client, database = get_database()
-
+        client.admin.command("ping")
         print("MongoDB connection successful!")
-        print("Database:", database.name)
-        print("Existing collections:", database.list_collection_names())
+        return client, client[DATABASE_NAME]
 
-    except Exception as error:
-        print("MongoDB connection failed:", error)
-
-    finally:
-        if client is not None:
-            client.close()
+    except ConnectionFailure:
+        client.close()
+        raise RuntimeError(
+            "Could not connect to MongoDB. "
+            "Check whether the MongoDB server is running."
+        )

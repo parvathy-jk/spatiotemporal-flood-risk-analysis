@@ -1,0 +1,382 @@
+{
+  "analysis": "Historical river-level analysis",
+  "total_records": 12648,
+  "district_count": 9,
+  "station_count": 26,
+  "95th_percentile_of_station_maximums": 18.482999999999997,
+  "threshold_note": "Relative statistical threshold, not an official flood-warning level.",
+  "district_summaries": [
+    {
+      "average_water_level": 10.863519344042839,
+      "maximum_water_level": 35.731,
+      "minimum_water_level": 0.001,
+      "records": 1494,
+      "stations": [
+        "BANGLAMKADAVU",
+        "MANIYAR DAM",
+        "VALLAMKULAM"
+      ],
+      "district": "PATHANAMTHITTA",
+      "station_count": 3
+    },
+    {
+      "average_water_level": 8.98562354651163,
+      "maximum_water_level": 13.346,
+      "minimum_water_level": 4.01,
+      "records": 344,
+      "stations": [
+        "ANGADIMOGAR"
+      ],
+      "district": "KASARAGOD",
+      "station_count": 1
+    },
+    {
+      "average_water_level": 8.592462703252032,
+      "maximum_water_level": 13.761,
+      "minimum_water_level": 0.589,
+      "records": 984,
+      "stations": [
+        "MALAYATTOOR KODANAD BRIDGE",
+        "RAMAMANGALAM BRIDGE"
+      ],
+      "district": "ERNAKULAM",
+      "station_count": 2
+    },
+    {
+      "average_water_level": 8.237838245614034,
+      "maximum_water_level": 10.52,
+      "minimum_water_level": 3.031,
+      "records": 570,
+      "stations": [
+        "Kadiyangad",
+        "Vanimal"
+      ],
+      "district": "KOZHIKODE",
+      "station_count": 2
+    },
+    {
+      "average_water_level": 7.117351240255138,
+      "maximum_water_level": 14.669,
+      "minimum_water_level": 0.185,
+      "records": 1411,
+      "stations": [
+        "KIDANGARA",
+        "PALA",
+        "TRINAYAKUDAM"
+      ],
+      "district": "KOTTAYAM",
+      "station_count": 3
+    },
+    {
+      "average_water_level": 5.62477389380531,
+      "maximum_water_level": 10.928,
+      "minimum_water_level": 1.407,
+      "records": 226,
+      "stations": [
+        "VAZHALIKKAVU"
+      ],
+      "district": "THRISSUR",
+      "station_count": 1
+    },
+    {
+      "average_water_level": 5.4355103044496484,
+      "maximum_water_level": 13.132,
+      "minimum_water_level": 0.038,
+      "records": 427,
+      "stations": [
+        "CHITATHUPARA"
+      ],
+      "district": "MALAPPURAM",
+      "station_count": 1
+    },
+    {
+      "average_water_level": 4.737888663101605,
+      "maximum_water_level": 8.689,
+      "minimum_water_level": 0.001,
+      "records": 935,
+      "stations": [
+        "PATHIPALAM",
+        "VELLUR"
+      ],
+      "district": "KANNUR",
+      "station_count": 2
+    },
+    {
+      "average_water_level": 3.9903607159980825,
+      "maximum_water_level": 14.997,
+      "minimum_water_level": 0.18,
+      "records": 6257,
+      "stations": [
+        "CHAMPAKULAM",
+        "ERAPUZHA",
+        "KAINAKARI",
+        "KAVALAM",
+        "PALLIPAD",
+        "PANAVALLY",
+        "PUNNAMADA",
+        "THANNEERMUKKOM PROJECT JETTY",
+        "THANNEERMUKKOM PUBLIC JETTY",
+        "THOTTAPPALLY",
+        "VEEYAPURAM"
+      ],
+      "district": "Alappuzha",
+      "station_count": 11
+    }
+  ],
+  "station_summaries": [
+    {
+      "average_water_level": 12.345137435897435,
+      "maximum_water_level": 35.731,
+      "minimum_water_level": 2.625,
+      "records": 585,
+      "relative_level_flag": "HIGH_RELATIVE_TO_DATA",
+      "station": "MANIYAR DAM",
+      "district": "PATHANAMTHITTA"
+    },
+    {
+      "average_water_level": 13.230981441048035,
+      "maximum_water_level": 19.644,
+      "minimum_water_level": 1.836,
+      "records": 458,
+      "relative_level_flag": "HIGH_RELATIVE_TO_DATA",
+      "station": "BANGLAMKADAVU",
+      "district": "PATHANAMTHITTA"
+    },
+    {
+      "average_water_level": 6.537478935698448,
+      "maximum_water_level": 15.0,
+      "minimum_water_level": 0.001,
+      "records": 451,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "VALLAMKULAM",
+      "district": "PATHANAMTHITTA"
+    },
+    {
+      "average_water_level": 4.953086744639377,
+      "maximum_water_level": 14.997,
+      "minimum_water_level": 0.87,
+      "records": 513,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "PALLIPAD",
+      "district": "Alappuzha"
+    },
+    {
+      "average_water_level": 11.694721640091116,
+      "maximum_water_level": 14.669,
+      "minimum_water_level": 6.4,
+      "records": 439,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "PALA",
+      "district": "KOTTAYAM"
+    },
+    {
+      "average_water_level": 8.291731652173914,
+      "maximum_water_level": 13.761,
+      "minimum_water_level": 2.161,
+      "records": 575,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "RAMAMANGALAM BRIDGE",
+      "district": "ERNAKULAM"
+    },
+    {
+      "average_water_level": 9.015250855745721,
+      "maximum_water_level": 13.462,
+      "minimum_water_level": 0.589,
+      "records": 409,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "MALAYATTOOR KODANAD BRIDGE",
+      "district": "ERNAKULAM"
+    },
+    {
+      "average_water_level": 8.98562354651163,
+      "maximum_water_level": 13.346,
+      "minimum_water_level": 4.01,
+      "records": 344,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "ANGADIMOGAR",
+      "district": "KASARAGOD"
+    },
+    {
+      "average_water_level": 5.4355103044496484,
+      "maximum_water_level": 13.132,
+      "minimum_water_level": 0.038,
+      "records": 427,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "CHITATHUPARA",
+      "district": "MALAPPURAM"
+    },
+    {
+      "average_water_level": 6.7752887931034484,
+      "maximum_water_level": 12.355,
+      "minimum_water_level": 0.18,
+      "records": 580,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "ERAPUZHA",
+      "district": "Alappuzha"
+    },
+    {
+      "average_water_level": 5.62477389380531,
+      "maximum_water_level": 10.928,
+      "minimum_water_level": 1.407,
+      "records": 226,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "VAZHALIKKAVU",
+      "district": "THRISSUR"
+    },
+    {
+      "average_water_level": 10.01423322368421,
+      "maximum_water_level": 10.52,
+      "minimum_water_level": 7.489,
+      "records": 304,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "Vanimal",
+      "district": "KOZHIKODE"
+    },
+    {
+      "average_water_level": 5.689099133448874,
+      "maximum_water_level": 10.004,
+      "minimum_water_level": 0.472,
+      "records": 577,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "CHAMPAKULAM",
+      "district": "Alappuzha"
+    },
+    {
+      "average_water_level": 6.714638938053097,
+      "maximum_water_level": 9.763,
+      "minimum_water_level": 0.349,
+      "records": 452,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "KIDANGARA",
+      "district": "KOTTAYAM"
+    },
+    {
+      "average_water_level": 6.207672556390977,
+      "maximum_water_level": 9.642,
+      "minimum_water_level": 3.031,
+      "records": 266,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "Kadiyangad",
+      "district": "KOZHIKODE"
+    },
+    {
+      "average_water_level": 5.256673056994819,
+      "maximum_water_level": 9.221,
+      "minimum_water_level": 0.494,
+      "records": 579,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "VEEYAPURAM",
+      "district": "Alappuzha"
+    },
+    {
+      "average_water_level": 5.816473394495413,
+      "maximum_water_level": 8.689,
+      "minimum_water_level": 0.149,
+      "records": 436,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "VELLUR",
+      "district": "KANNUR"
+    },
+    {
+      "average_water_level": 4.607416783216783,
+      "maximum_water_level": 8.092,
+      "minimum_water_level": 0.328,
+      "records": 572,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "THANNEERMUKKOM PUBLIC JETTY",
+      "district": "Alappuzha"
+    },
+    {
+      "average_water_level": 3.795477955911824,
+      "maximum_water_level": 7.471,
+      "minimum_water_level": 0.001,
+      "records": 499,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "PATHIPALAM",
+      "district": "KANNUR"
+    },
+    {
+      "average_water_level": 3.603044230769231,
+      "maximum_water_level": 6.934,
+      "minimum_water_level": 0.185,
+      "records": 520,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "TRINAYAKUDAM",
+      "district": "KOTTAYAM"
+    },
+    {
+      "average_water_level": 4.0873905982905985,
+      "maximum_water_level": 5.41,
+      "minimum_water_level": 0.789,
+      "records": 585,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "KAINAKARI",
+      "district": "Alappuzha"
+    },
+    {
+      "average_water_level": 3.0190614853195163,
+      "maximum_water_level": 5.246,
+      "minimum_water_level": 0.435,
+      "records": 579,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "THOTTAPPALLY",
+      "district": "Alappuzha"
+    },
+    {
+      "average_water_level": 2.602093140794224,
+      "maximum_water_level": 4.746,
+      "minimum_water_level": 0.851,
+      "records": 554,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "PUNNAMADA",
+      "district": "Alappuzha"
+    },
+    {
+      "average_water_level": 2.2437614285714287,
+      "maximum_water_level": 3.995,
+      "minimum_water_level": 0.24,
+      "records": 560,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "THANNEERMUKKOM PROJECT JETTY",
+      "district": "Alappuzha"
+    },
+    {
+      "average_water_level": 2.5762058823529412,
+      "maximum_water_level": 3.976,
+      "minimum_water_level": 0.613,
+      "records": 578,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "PANAVALLY",
+      "district": "Alappuzha"
+    },
+    {
+      "average_water_level": 2.0847355172413793,
+      "maximum_water_level": 2.841,
+      "minimum_water_level": 0.798,
+      "records": 580,
+      "relative_level_flag": "BELOW_DATA_THRESHOLD",
+      "station": "KAVALAM",
+      "district": "Alappuzha"
+    }
+  ],
+  "stations_with_high_relative_levels": [
+    {
+      "average_water_level": 12.345137435897435,
+      "maximum_water_level": 35.731,
+      "minimum_water_level": 2.625,
+      "records": 585,
+      "relative_level_flag": "HIGH_RELATIVE_TO_DATA",
+      "station": "MANIYAR DAM",
+      "district": "PATHANAMTHITTA"
+    },
+    {
+      "average_water_level": 13.230981441048035,
+      "maximum_water_level": 19.644,
+      "minimum_water_level": 1.836,
+      "records": 458,
+      "relative_level_flag": "HIGH_RELATIVE_TO_DATA",
+      "station": "BANGLAMKADAVU",
+      "district": "PATHANAMTHITTA"
+    }
+  ]
+}

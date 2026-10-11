@@ -32,7 +32,7 @@ member1_data/data/raw/boundary/*
 *.pyc
 __pycache__/
 .ipynb_checkpoints/
-
+*.py[cod]
 mongodb-data/
 
 # Additional local Python environment

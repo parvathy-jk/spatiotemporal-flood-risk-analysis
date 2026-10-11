@@ -1,0 +1,109 @@
+{
+  "analysis": "Rainfall and elevation analysis",
+  "total_records": 8000,
+  "days_analysed": 4,
+  "heavy_rainfall_screening_threshold_mm": 100.0,
+  "threshold_note": "Screening threshold only; not an official flood-warning threshold.",
+  "daily_summaries": [
+    {
+      "date": "2025-08-01",
+      "average_rainfall_mm": 15.876500009164214,
+      "maximum_rainfall_mm": 79.19999694824219,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": false
+    },
+    {
+      "date": "2025-08-02",
+      "average_rainfall_mm": 16.853649985026568,
+      "maximum_rainfall_mm": 90.6999969482422,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": false
+    },
+    {
+      "date": "2025-08-03",
+      "average_rainfall_mm": 23.963599985901265,
+      "maximum_rainfall_mm": 122.6999969482422,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": true
+    },
+    {
+      "date": "2025-08-04",
+      "average_rainfall_mm": 13.150799999080599,
+      "maximum_rainfall_mm": 144.0,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": true
+    }
+  ],
+  "top_10_rainfall_observations": [
+    {
+      "grid_row": 39,
+      "grid_col": 0,
+      "date": "2025-08-04",
+      "rainfall_mm": 144.0
+    },
+    {
+      "grid_row": 38,
+      "grid_col": 0,
+      "date": "2025-08-04",
+      "rainfall_mm": 134.5
+    },
+    {
+      "grid_row": 40,
+      "grid_col": 0,
+      "date": "2025-08-04",
+      "rainfall_mm": 133.0
+    },
+    {
+      "grid_row": 40,
+      "grid_col": 1,
+      "date": "2025-08-04",
+      "rainfall_mm": 126.1999969482422
+    },
+    {
+      "grid_row": 32,
+      "grid_col": 0,
+      "date": "2025-08-03",
+      "rainfall_mm": 122.6999969482422
+    },
+    {
+      "grid_row": 32,
+      "grid_col": 1,
+      "date": "2025-08-03",
+      "rainfall_mm": 122.0
+    },
+    {
+      "grid_row": 39,
+      "grid_col": 1,
+      "date": "2025-08-04",
+      "rainfall_mm": 119.9000015258789
+    },
+    {
+      "grid_row": 33,
+      "grid_col": 3,
+      "date": "2025-08-03",
+      "rainfall_mm": 117.6999969482422
+    },
+    {
+      "grid_row": 33,
+      "grid_col": 2,
+      "date": "2025-08-03",
+      "rainfall_mm": 117.5999984741211
+    },
+    {
+      "grid_row": 33,
+      "grid_col": 1,
+      "date": "2025-08-03",
+      "rainfall_mm": 112.6999969482422
+    }
+  ],
+  "elevation_data_quality": {
+    "total_records": 8000,
+    "without_elevation": 2240,
+    "partial_elevation": 476,
+    "complete_elevation": 5284
+  }
+}

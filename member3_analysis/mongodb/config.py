@@ -1,11 +1,11 @@
-import os
+DATABASE_NAME = "flood_risk_analysis"
 
-MONGO_URI = os.getenv(
-    "MONGO_URI",
-    "mongodb://127.0.0.1:27017/"
-)
+RIVER_COLLECTION = "river_daily_summary"
+RAINFALL_COLLECTION = "rainfall_elevation"
 
-DATABASE_NAME = os.getenv(
-    "MONGO_DATABASE",
-    "flood_risk_analysis"
+RIVER_FILE = "results/mapreduce/river_daily_summary.tsv"
+
+RAINFALL_FILE = (
+    "results/spark/rainfall_elevation/"
+    "spark_rainfall_elevation.csv"
 )

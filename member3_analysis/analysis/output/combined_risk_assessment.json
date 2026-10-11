@@ -1,0 +1,285 @@
+{
+  "project": "Kerala Spatiotemporal Flood-Risk Analysis",
+  "assessment_type": "Preliminary, descriptive flood-risk screening",
+  "river_analysis": {
+    "records_analysed": 12648,
+    "districts_analysed": 9,
+    "stations_analysed": 26,
+    "relative_high_level_station_count": 2,
+    "relative_high_level_stations": [
+      {
+        "average_water_level": 12.345137435897435,
+        "maximum_water_level": 35.731,
+        "minimum_water_level": 2.625,
+        "records": 585,
+        "relative_level_flag": "HIGH_RELATIVE_TO_DATA",
+        "station": "MANIYAR DAM",
+        "district": "PATHANAMTHITTA"
+      },
+      {
+        "average_water_level": 13.230981441048035,
+        "maximum_water_level": 19.644,
+        "minimum_water_level": 1.836,
+        "records": 458,
+        "relative_level_flag": "HIGH_RELATIVE_TO_DATA",
+        "station": "BANGLAMKADAVU",
+        "district": "PATHANAMTHITTA"
+      }
+    ],
+    "district_summaries": [
+      {
+        "average_water_level": 10.863519344042839,
+        "maximum_water_level": 35.731,
+        "minimum_water_level": 0.001,
+        "records": 1494,
+        "stations": [
+          "BANGLAMKADAVU",
+          "MANIYAR DAM",
+          "VALLAMKULAM"
+        ],
+        "district": "PATHANAMTHITTA",
+        "station_count": 3
+      },
+      {
+        "average_water_level": 8.98562354651163,
+        "maximum_water_level": 13.346,
+        "minimum_water_level": 4.01,
+        "records": 344,
+        "stations": [
+          "ANGADIMOGAR"
+        ],
+        "district": "KASARAGOD",
+        "station_count": 1
+      },
+      {
+        "average_water_level": 8.592462703252032,
+        "maximum_water_level": 13.761,
+        "minimum_water_level": 0.589,
+        "records": 984,
+        "stations": [
+          "MALAYATTOOR KODANAD BRIDGE",
+          "RAMAMANGALAM BRIDGE"
+        ],
+        "district": "ERNAKULAM",
+        "station_count": 2
+      },
+      {
+        "average_water_level": 8.237838245614034,
+        "maximum_water_level": 10.52,
+        "minimum_water_level": 3.031,
+        "records": 570,
+        "stations": [
+          "Kadiyangad",
+          "Vanimal"
+        ],
+        "district": "KOZHIKODE",
+        "station_count": 2
+      },
+      {
+        "average_water_level": 7.117351240255138,
+        "maximum_water_level": 14.669,
+        "minimum_water_level": 0.185,
+        "records": 1411,
+        "stations": [
+          "KIDANGARA",
+          "PALA",
+          "TRINAYAKUDAM"
+        ],
+        "district": "KOTTAYAM",
+        "station_count": 3
+      },
+      {
+        "average_water_level": 5.62477389380531,
+        "maximum_water_level": 10.928,
+        "minimum_water_level": 1.407,
+        "records": 226,
+        "stations": [
+          "VAZHALIKKAVU"
+        ],
+        "district": "THRISSUR",
+        "station_count": 1
+      },
+      {
+        "average_water_level": 5.4355103044496484,
+        "maximum_water_level": 13.132,
+        "minimum_water_level": 0.038,
+        "records": 427,
+        "stations": [
+          "CHITATHUPARA"
+        ],
+        "district": "MALAPPURAM",
+        "station_count": 1
+      },
+      {
+        "average_water_level": 4.737888663101605,
+        "maximum_water_level": 8.689,
+        "minimum_water_level": 0.001,
+        "records": 935,
+        "stations": [
+          "PATHIPALAM",
+          "VELLUR"
+        ],
+        "district": "KANNUR",
+        "station_count": 2
+      },
+      {
+        "average_water_level": 3.9903607159980825,
+        "maximum_water_level": 14.997,
+        "minimum_water_level": 0.18,
+        "records": 6257,
+        "stations": [
+          "CHAMPAKULAM",
+          "ERAPUZHA",
+          "KAINAKARI",
+          "KAVALAM",
+          "PALLIPAD",
+          "PANAVALLY",
+          "PUNNAMADA",
+          "THANNEERMUKKOM PROJECT JETTY",
+          "THANNEERMUKKOM PUBLIC JETTY",
+          "THOTTAPPALLY",
+          "VEEYAPURAM"
+        ],
+        "district": "Alappuzha",
+        "station_count": 11
+      }
+    ]
+  },
+  "rainfall_analysis": {
+    "records_analysed": 8000,
+    "days_analysed": 4,
+    "daily_summaries": [
+      {
+        "date": "2025-08-01",
+        "average_rainfall_mm": 15.876500009164214,
+        "maximum_rainfall_mm": 79.19999694824219,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": false
+      },
+      {
+        "date": "2025-08-02",
+        "average_rainfall_mm": 16.853649985026568,
+        "maximum_rainfall_mm": 90.6999969482422,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": false
+      },
+      {
+        "date": "2025-08-03",
+        "average_rainfall_mm": 23.963599985901265,
+        "maximum_rainfall_mm": 122.6999969482422,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": true
+      },
+      {
+        "date": "2025-08-04",
+        "average_rainfall_mm": 13.150799999080599,
+        "maximum_rainfall_mm": 144.0,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": true
+      }
+    ],
+    "heavy_rainfall_screening_days": [
+      {
+        "date": "2025-08-03",
+        "average_rainfall_mm": 23.963599985901265,
+        "maximum_rainfall_mm": 122.6999969482422,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": true
+      },
+      {
+        "date": "2025-08-04",
+        "average_rainfall_mm": 13.150799999080599,
+        "maximum_rainfall_mm": 144.0,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": true
+      }
+    ],
+    "top_10_observations": [
+      {
+        "grid_row": 39,
+        "grid_col": 0,
+        "date": "2025-08-04",
+        "rainfall_mm": 144.0
+      },
+      {
+        "grid_row": 38,
+        "grid_col": 0,
+        "date": "2025-08-04",
+        "rainfall_mm": 134.5
+      },
+      {
+        "grid_row": 40,
+        "grid_col": 0,
+        "date": "2025-08-04",
+        "rainfall_mm": 133.0
+      },
+      {
+        "grid_row": 40,
+        "grid_col": 1,
+        "date": "2025-08-04",
+        "rainfall_mm": 126.1999969482422
+      },
+      {
+        "grid_row": 32,
+        "grid_col": 0,
+        "date": "2025-08-03",
+        "rainfall_mm": 122.6999969482422
+      },
+      {
+        "grid_row": 32,
+        "grid_col": 1,
+        "date": "2025-08-03",
+        "rainfall_mm": 122.0
+      },
+      {
+        "grid_row": 39,
+        "grid_col": 1,
+        "date": "2025-08-04",
+        "rainfall_mm": 119.9000015258789
+      },
+      {
+        "grid_row": 33,
+        "grid_col": 3,
+        "date": "2025-08-03",
+        "rainfall_mm": 117.6999969482422
+      },
+      {
+        "grid_row": 33,
+        "grid_col": 2,
+        "date": "2025-08-03",
+        "rainfall_mm": 117.5999984741211
+      },
+      {
+        "grid_row": 33,
+        "grid_col": 1,
+        "date": "2025-08-03",
+        "rainfall_mm": 112.6999969482422
+      }
+    ]
+  },
+  "elevation_data_quality": {
+    "total_records": 8000,
+    "without_elevation": 2240,
+    "partial_elevation": 476,
+    "complete_elevation": 5284
+  },
+  "interpretation": {
+    "river_indicator": "High relative levels identify station maxima near the upper end of this dataset. They do not establish official danger levels or prove that flooding occurred.",
+    "rainfall_indicator": "The rainfall screening flag identifies days whose maximum grid-cell rainfall reaches the selected screening threshold.",
+    "combined_risk_score": "Not calculated because the available river and rainfall periods do not overlap, and a validated combined scoring method has not been established."
+  },
+  "limitations": [
+    "River data ends on 2025-03-10, while rainfall data covers 2025-08-01 through 2025-08-04.",
+    "The datasets cannot currently establish a same-day rainfall-to-river-level relationship.",
+    "The statistical river threshold is not an official flood-warning level.",
+    "The rainfall screening threshold is not an official flood-warning threshold.",
+    "Geographic coordinates in the rainfall output require verification before making location-specific map claims.",
+    "The assessment is descriptive and has not been validated as a flood prediction model."
+  ]
+}
