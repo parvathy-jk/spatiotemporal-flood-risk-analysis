@@ -5,3 +5,4 @@ xarray
 netCDF4
 matplotlib
 geopandas
+pymongo==4.18.3
