@@ -1,10 +1,42 @@
 {
   "analysis": "Rainfall and elevation analysis",
-  "total_records": 8000,
-  "days_analysed": 4,
+  "total_records": 16000,
+  "days_analysed": 8,
   "heavy_rainfall_screening_threshold_mm": 100.0,
   "threshold_note": "Screening threshold only; not an official flood-warning threshold.",
   "daily_summaries": [
+    {
+      "date": "2025-03-01",
+      "average_rainfall_mm": 2.789850001331419,
+      "maximum_rainfall_mm": 42.59999847412109,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": false
+    },
+    {
+      "date": "2025-03-02",
+      "average_rainfall_mm": 5.426599999096244,
+      "maximum_rainfall_mm": 78.9000015258789,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": false
+    },
+    {
+      "date": "2025-03-03",
+      "average_rainfall_mm": 1.193350001823157,
+      "maximum_rainfall_mm": 53.79999923706055,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": false
+    },
+    {
+      "date": "2025-03-04",
+      "average_rainfall_mm": 0.5823000005744398,
+      "maximum_rainfall_mm": 7.300000190734863,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": false
+    },
     {
       "date": "2025-08-01",
       "average_rainfall_mm": 15.876500009164214,
@@ -101,9 +133,9 @@
     }
   ],
   "elevation_data_quality": {
-    "total_records": 8000,
-    "without_elevation": 2240,
-    "partial_elevation": 476,
-    "complete_elevation": 5284
+    "total_records": 16000,
+    "without_elevation": 4480,
+    "partial_elevation": 952,
+    "complete_elevation": 10568
   }
 }

@@ -146,9 +146,41 @@
     ]
   },
   "rainfall_analysis": {
-    "records_analysed": 8000,
-    "days_analysed": 4,
+    "records_analysed": 16000,
+    "days_analysed": 8,
     "daily_summaries": [
+      {
+        "date": "2025-03-01",
+        "average_rainfall_mm": 2.789850001331419,
+        "maximum_rainfall_mm": 42.59999847412109,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": false
+      },
+      {
+        "date": "2025-03-02",
+        "average_rainfall_mm": 5.426599999096244,
+        "maximum_rainfall_mm": 78.9000015258789,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": false
+      },
+      {
+        "date": "2025-03-03",
+        "average_rainfall_mm": 1.193350001823157,
+        "maximum_rainfall_mm": 53.79999923706055,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": false
+      },
+      {
+        "date": "2025-03-04",
+        "average_rainfall_mm": 0.5823000005744398,
+        "maximum_rainfall_mm": 7.300000190734863,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": false
+      },
       {
         "date": "2025-08-01",
         "average_rainfall_mm": 15.876500009164214,
@@ -263,23 +295,61 @@
       }
     ]
   },
+  "march_2025_rainfall_screening": {
+    "period": "2025-03-01 to 2025-03-04",
+    "daily_summaries": [
+      {
+        "date": "2025-03-01",
+        "mean_rainfall_mm": 2.79,
+        "max_rainfall_mm": 42.6,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": false
+      },
+      {
+        "date": "2025-03-02",
+        "mean_rainfall_mm": 5.43,
+        "max_rainfall_mm": 78.9,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": false
+      },
+      {
+        "date": "2025-03-03",
+        "mean_rainfall_mm": 1.19,
+        "max_rainfall_mm": 53.8,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": false
+      },
+      {
+        "date": "2025-03-04",
+        "mean_rainfall_mm": 0.58,
+        "max_rainfall_mm": 7.3,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": false
+      }
+    ],
+    "days_found": 4,
+    "days_reaching_100mm_screen": 0,
+    "assessment": "Preliminary rainfall screening only. The 100 mm threshold is not an official flood-warning threshold."
+  },
   "elevation_data_quality": {
-    "total_records": 8000,
-    "without_elevation": 2240,
-    "partial_elevation": 476,
-    "complete_elevation": 5284
+    "total_records": 16000,
+    "without_elevation": 4480,
+    "partial_elevation": 952,
+    "complete_elevation": 10568
   },
   "interpretation": {
     "river_indicator": "High relative levels identify station maxima near the upper end of this dataset. They do not establish official danger levels or prove that flooding occurred.",
     "rainfall_indicator": "The rainfall screening flag identifies days whose maximum grid-cell rainfall reaches the selected screening threshold.",
-    "combined_risk_score": "Not calculated because the available river and rainfall periods do not overlap, and a validated combined scoring method has not been established."
+    "march_rainfall_findings": "March 1\u20134, 2025 rainfall was analysed separately. The daily maximum rainfall values were 42.60 mm, 78.90 mm, 53.80 mm, and 7.30 mm, respectively. None reached the selected 100 mm screening threshold.",
+    "combined_risk_score": "Not calculated because there are no same-day river observations for the March 1\u20134 rainfall period, and a validated combined scoring method has not been established."
   },
   "limitations": [
-    "River data ends on 2025-03-10, while rainfall data covers 2025-08-01 through 2025-08-04.",
-    "The datasets cannot currently establish a same-day rainfall-to-river-level relationship.",
+    "Rainfall observations cover March 1\u20134, 2025 and August 1\u20134, 2025. River observations are available through March 10, 2025, but there are no river observations for March 1\u20134.",
+    "The available data cannot establish a same-day rainfall-to-river-level relationship for March 1\u20134.",
     "The statistical river threshold is not an official flood-warning level.",
     "The rainfall screening threshold is not an official flood-warning threshold.",
     "Geographic coordinates in the rainfall output require verification before making location-specific map claims.",
-    "The assessment is descriptive and has not been validated as a flood prediction model."
+    "The assessment is descriptive and has not been validated as a flood prediction model.",
+    "Rainfall and elevation alone do not account for all flood-driving factors, such as drainage, soil saturation, land use, and river discharge."
   ]
 }
