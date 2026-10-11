@@ -23,7 +23,8 @@ from pyspark.sql.types import (
 PROJECT_ROOT = Path.cwd()
 
 RAINFALL_DIR = (
-    PROJECT_ROOT / "member1_data/data/processed/rainfall_kerala"
+    PROJECT_ROOT
+    / "member1_data/data/processed/march_2025/rainfall_kerala"
 )
 
 ELEVATION_PATH = (
@@ -31,7 +32,7 @@ ELEVATION_PATH = (
     / "member1_data/data/processed/elevation/elevation_kerala_bbox.tif"
 )
 
-OUTPUT_DIR = PROJECT_ROOT / "results/spark/rainfall_elevation"
+OUTPUT_DIR = PROJECT_ROOT / "results/spark/rainfall_elevation_march_2025"
 
 # The rainfall grid is 40 x 50.
 # Verify the elevation-to-rainfall alignment before using this ratio.
@@ -39,15 +40,11 @@ ELEVATION_PIXELS_PER_RAINFALL_CELL = 120
 
 
 def extract_date(filename):
-    """Extract YYYYMMDD from the IMERG filename."""
-    marker = ".2025"
-    start = filename.find(marker)
-
-    if start == -1:
-        raise ValueError(f"Cannot identify date in {filename}")
+    """Extract YYYYMMDD from the rainfall filename."""
+    date_part = filename.split("_")[1]
 
     return datetime.strptime(
-        filename[start + 1:start + 9], "%Y%m%d"
+        date_part, "%Y%m%d"
     ).strftime("%Y-%m-%d")
 
 
