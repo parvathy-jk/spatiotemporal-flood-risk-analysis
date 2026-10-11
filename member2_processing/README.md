@@ -165,26 +165,63 @@ The script writes its output to `results/spark/rainfall_elevation/`.
 ### Hadoop MapReduce
 
 Requirements:
-
-- Hadoop and HDFS configured and running.
+- Hadoop 3.3.6 configured and running.
+- HDFS and YARN services running.
+- The river CSV uploaded to the HDFS input path.
 - Hadoop Streaming JAR available.
-- River CSV uploaded to the HDFS input path.
 
-The Hadoop Streaming JAR used during development was:
+Set the Streaming JAR path:
 
-`$HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar`
+```bash
+export STREAMING_JAR="$HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar"
+```
 
-The input HDFS directory was:
+Ensure the HDFS input file exists:
 
-`/user/niya/flood-risk-analysis/input/river/`
+```bash
+hdfs dfs -ls /user/niya/flood-risk-analysis/input/river/river_clean.csv
+```
 
-The output HDFS directory was:
+Before rerunning the job, remove the previous output directory if it exists:
 
+```bash
+hdfs dfs -rm -r /user/niya/flood-risk-analysis/output/river_daily_summary
+```
+
+Run Hadoop Streaming from the project root:
+
+```bash
+hadoop jar "$STREAMING_JAR" \
+  -files member2_processing/mapreduce/mapper.py,member2_processing/mapreduce/reducer.py \
+  -mapper "python3 mapper.py" \
+  -reducer "python3 reducer.py" \
+  -input /user/niya/flood-risk-analysis/input/river/river_clean.csv \
+  -output /user/niya/flood-risk-analysis/output/river_daily_summary
+```
+
+Verify successful completion:
+
+```bash
+hdfs dfs -test -e /user/niya/flood-risk-analysis/output/river_daily_summary/_SUCCESS \
+  && echo "MapReduce SUCCESS" \
+  || echo "MapReduce OUTPUT NOT VERIFIED"
+```
+
+Download the output:
+
+```bash
+mkdir -p results/mapreduce
+
+hdfs dfs -get \
+  /user/niya/flood-risk-analysis/output/river_daily_summary/part-00000 \
+  results/mapreduce/river_daily_summary.tsv
+```
+
+The HDFS output directory is:
 `/user/niya/flood-risk-analysis/output/river_daily_summary/`
 
-The output directory must not already exist when rerunning the job.
-Remove or rename the previous output directory before executing the job
-again.
+The local output file is:
+`results/mapreduce/river_daily_summary.tsv`
 
 ## 8. Integration Handover
 
