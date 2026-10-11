@@ -28,8 +28,10 @@ def main():
 
     river = report["river_analysis"]
     rainfall = report["rainfall_analysis"]
+    march = report["march_2025_rainfall_screening"]
     elevation = report["elevation_data_quality"]
 
+    # Create dashboard
     fig, axes = plt.subplots(2, 2, figsize=(16, 11))
     fig.suptitle(
         "Kerala Flood-Risk Assessment Dashboard",
@@ -39,35 +41,88 @@ def main():
 
     # 1. Historical river indicators
     ax = axes[0, 0]
+
     high_count = river["relative_high_level_station_count"]
     other_count = river["stations_analysed"] - high_count
 
-    ax.bar(
+    bars = ax.bar(
         ["High relative\nhistorical level", "Other stations"],
         [high_count, other_count],
     )
+
     ax.set_title("Historical River-Level Indicators")
     ax.set_ylabel("Number of stations")
 
-    for i, value in enumerate([high_count, other_count]):
-        ax.text(i, value, str(value), ha="center", va="bottom")
+    for bar in bars:
+        ax.text(
+            bar.get_x() + bar.get_width() / 2,
+            bar.get_height(),
+            f"{int(bar.get_height())}",
+            ha="center",
+            va="bottom",
+        )
 
-    # 2. Daily maximum rainfall
+    # 2. Daily maximum rainfall, separated by month
     ax = axes[0, 1]
-    daily = rainfall["daily_summaries"]
 
-    dates = [item["date"] for item in daily]
-    maxima = [item["maximum_rainfall_mm"] for item in daily]
+    daily = sorted(
+        rainfall["daily_summaries"],
+        key=lambda item: item["date"],
+    )
 
-    ax.plot(dates, maxima, marker="o", linewidth=2)
-    ax.set_title("Daily Maximum Rainfall")
-    ax.set_ylabel("Rainfall (mm)")
-    ax.set_xlabel("Date")
-    ax.tick_params(axis="x", rotation=25)
+    march_daily = [
+        item for item in daily
+        if item["date"].startswith("2025-03")
+    ]
+    august_daily = [
+        item for item in daily
+        if item["date"].startswith("2025-08")
+    ]
+
+    if march_daily:
+        march_dates = [item["date"][5:] for item in march_daily]
+        march_maxima = [
+            item["maximum_rainfall_mm"] for item in march_daily
+        ]
+
+        ax.plot(
+            march_dates,
+            march_maxima,
+            marker="o",
+            linewidth=2,
+            label="March 2025",
+        )
+
+    if august_daily:
+        august_dates = [item["date"][5:] for item in august_daily]
+        august_maxima = [
+            item["maximum_rainfall_mm"] for item in august_daily
+        ]
+
+        ax.plot(
+            august_dates,
+            august_maxima,
+            marker="s",
+            linewidth=2,
+            label="August 2025",
+        )
+
+    ax.axhline(
+        y=100,
+        linestyle="--",
+        linewidth=1.5,
+        label="100 mm screening threshold",
+    )
+
+    ax.set_title("Daily Maximum Rainfall by Period")
+    ax.set_ylabel("Maximum rainfall (mm)")
+    ax.set_xlabel("Date (MM-DD)")
+    ax.legend()
     ax.grid(True, linestyle="--", alpha=0.3)
 
     # 3. Elevation data quality
     ax = axes[1, 0]
+
     labels = ["No elevation", "Partial", "Complete"]
     values = [
         elevation["without_elevation"],
@@ -88,36 +143,58 @@ def main():
             va="bottom",
         )
 
-    # 4. Interpretation and limitations
+    # 4. March screening results and limitations
     ax = axes[1, 1]
     ax.axis("off")
 
+    march_lines = [
+        (
+            f"{item['date']}: mean "
+            f"{item['mean_rainfall_mm']:.2f} mm, "
+            f"maximum {item['max_rainfall_mm']:.2f} mm"
+        )
+        for item in march["daily_summaries"]
+    ]
+
     summary = (
-        "ASSESSMENT SUMMARY\n\n"
-        f"River stations analysed: {river['stations_analysed']}\n"
-        f"Rainfall days analysed: {rainfall['days_analysed']}\n"
-        f"Rainfall records: {rainfall['records_analysed']:,}\n\n"
-        "IMPORTANT LIMITATIONS\n\n"
-        "• River and rainfall periods do not overlap.\n"
-        "• Relative river levels are not official danger levels.\n"
-        "• Rainfall screening is not a flood warning.\n"
-        "• No validated combined risk score is calculated.\n"
+        "MARCH 2025 RAINFALL SCREENING\n\n"
+        + "\n".join(march_lines)
+        + "\n\n"
+        f"Days reaching 100 mm threshold: "
+        f"{march['days_reaching_100mm_screen']}"
+        f" of {march['days_found']}\n\n"
+        "OVERALL DATA SUMMARY\n\n"
+        f"River stations: {river['stations_analysed']}\n"
+        f"High relative-level stations: {high_count}\n"
+        f"Rainfall records: {rainfall['records_analysed']:,}\n"
+        f"Rainfall days across both periods: "
+        f"{rainfall['days_analysed']}\n\n"
+        "LIMITATIONS\n\n"
+        "• No river observations for March 1–4.\n"
+        "• River levels are not official danger levels.\n"
+        "• The 100 mm threshold is not an official warning.\n"
+        "• Geographic coordinates require verification.\n"
+        "• No validated combined risk score is calculated."
     )
 
     ax.text(
-        0.03,
-        0.97,
+        0.02,
+        0.98,
         summary,
         transform=ax.transAxes,
-        fontsize=11,
+        fontsize=9.5,
         va="top",
-        linespacing=1.5,
+        linespacing=1.35,
+        wrap=True,
     )
 
     fig.text(
         0.5,
         0.015,
-        "Preliminary descriptive assessment — not a validated flood prediction",
+        (
+            "Preliminary descriptive assessment — "
+            "not a validated flood prediction"
+        ),
         ha="center",
         fontsize=10,
     )
@@ -129,6 +206,8 @@ def main():
     plt.close(fig)
 
     print(f"Combined assessment dashboard saved to: {output_path}")
+    print(f"March rainfall days displayed: {len(march_daily)}")
+    print(f"August rainfall days displayed: {len(august_daily)}")
 
 
 if __name__ == "__main__":
