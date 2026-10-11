@@ -91,3 +91,38 @@ These generated reports are stored locally and excluded from Git along with proc
 - River observations contain substantial temporal gaps at some stations.
 - Elevation coverage is incomplete.
 - These limitations must be considered before combining the datasets for flood-risk analysis.
+## March 2025 Rainfall Preprocessing
+
+### Source
+- Dataset: NASA GPM IMERG daily GIS V07B
+- Variable: `total.accum`
+- Dates: March 1–4, 2025
+- Source format: GeoTIFF files extracted from ZIP archives
+
+### Preprocessing
+1. Extracted the source archives.
+2. Selected the daily `total.accum` rainfall rasters.
+3. Cropped the rasters to a rectangular bounding box covering 74°E–78°E and 8°N–13°N.
+4. Converted valid stored values from tenths of a millimetre to millimetres by dividing by 10.
+5. Excluded source fill values of 29999 and assigned -9999 as output NoData.
+6. Validated the output CRS, dimensions, rainfall values, and NoData handling.
+
+### Output
+Processed rasters are saved locally in:
+`member1_data/data/processed/march_2025/rainfall_kerala/`
+
+Processing script:
+`member1_data/scripts/process_march_rainfall.py`
+
+Manifest:
+`member1_data/data/processed/march_2025/rainfall_manifest.json`
+
+### HDFS Storage
+Rainfall rasters:
+`/user/lakshmi/flood-risk-analysis/rainfall_march_2025/`
+
+Manifest:
+`/user/lakshmi/flood-risk-analysis/metadata/march_2025/`
+
+### Limitation
+The study extent is a rectangular bounding box, not an exact Kerala state boundary.
