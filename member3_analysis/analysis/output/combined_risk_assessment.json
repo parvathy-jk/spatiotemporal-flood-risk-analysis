@@ -331,6 +331,132 @@
     "days_reaching_100mm_screen": 0,
     "assessment": "Preliminary rainfall screening only. The 100 mm threshold is not an official flood-warning threshold."
   },
+  "preliminary_environmental_risk_index": {
+    "status": "Exploratory screening completed",
+    "period": "2025-03-01 to 2025-03-04",
+    "grid_cells_scored": 1440,
+    "weights": {
+      "rainfall": 0.5,
+      "low_elevation": 0.5
+    },
+    "formula": "100 * (0.5 * rainfall_score + 0.5 * low_elevation_score)",
+    "normalization": {
+      "rainfall": "Average cell rainfall divided by the maximum average rainfall among scored cells.",
+      "low_elevation": "(Maximum cell elevation - cell elevation) / (Maximum elevation - minimum elevation)."
+    },
+    "top_risk_cells": [
+      {
+        "grid_row": 44,
+        "grid_col": 27,
+        "average_rainfall_mm": 20.68,
+        "elevation_mean": 0.0,
+        "rainfall_score": 1.0,
+        "low_elevation_score": 1.0,
+        "preliminary_risk_index": 100.0,
+        "days_observed": 4
+      },
+      {
+        "grid_row": 44,
+        "grid_col": 28,
+        "average_rainfall_mm": 20.25,
+        "elevation_mean": 9.33,
+        "rainfall_score": 0.9794,
+        "low_elevation_score": 0.9958,
+        "preliminary_risk_index": 98.76,
+        "days_observed": 4
+      },
+      {
+        "grid_row": 18,
+        "grid_col": 16,
+        "average_rainfall_mm": 15.65,
+        "elevation_mean": 0.0,
+        "rainfall_score": 0.757,
+        "low_elevation_score": 1.0,
+        "preliminary_risk_index": 87.85,
+        "days_observed": 4
+      },
+      {
+        "grid_row": 44,
+        "grid_col": 29,
+        "average_rainfall_mm": 16.05,
+        "elevation_mean": 48.24,
+        "rainfall_score": 0.7763,
+        "low_elevation_score": 0.9785,
+        "preliminary_risk_index": 87.74,
+        "days_observed": 4
+      },
+      {
+        "grid_row": 43,
+        "grid_col": 27,
+        "average_rainfall_mm": 15.5,
+        "elevation_mean": 3.44,
+        "rainfall_score": 0.7497,
+        "low_elevation_score": 0.9985,
+        "preliminary_risk_index": 87.41,
+        "days_observed": 4
+      },
+      {
+        "grid_row": 43,
+        "grid_col": 28,
+        "average_rainfall_mm": 15.75,
+        "elevation_mean": 39.29,
+        "rainfall_score": 0.7618,
+        "low_elevation_score": 0.9825,
+        "preliminary_risk_index": 87.21,
+        "days_observed": 4
+      },
+      {
+        "grid_row": 43,
+        "grid_col": 26,
+        "average_rainfall_mm": 15.32,
+        "elevation_mean": 0.0,
+        "rainfall_score": 0.7412,
+        "low_elevation_score": 1.0,
+        "preliminary_risk_index": 87.06,
+        "days_observed": 4
+      },
+      {
+        "grid_row": 18,
+        "grid_col": 15,
+        "average_rainfall_mm": 15.3,
+        "elevation_mean": 0.0,
+        "rainfall_score": 0.74,
+        "low_elevation_score": 1.0,
+        "preliminary_risk_index": 87.0,
+        "days_observed": 4
+      },
+      {
+        "grid_row": 42,
+        "grid_col": 26,
+        "average_rainfall_mm": 14.37,
+        "elevation_mean": 2.0,
+        "rainfall_score": 0.6953,
+        "low_elevation_score": 0.9991,
+        "preliminary_risk_index": 84.72,
+        "days_observed": 4
+      },
+      {
+        "grid_row": 45,
+        "grid_col": 29,
+        "average_rainfall_mm": 14.28,
+        "elevation_mean": 12.54,
+        "rainfall_score": 0.6904,
+        "low_elevation_score": 0.9944,
+        "preliminary_risk_index": 84.24,
+        "days_observed": 4
+      }
+    ],
+    "interpretation": "Higher scores indicate higher relative values under this exploratory formula. They are not probabilities of flooding or validated flood-risk predictions.",
+    "limitations": [
+      "The weights are illustrative and not calibrated.",
+      "Elevation values of zero are retained but require verification.",
+      "Records with missing elevation are excluded.",
+      "Grid-cell geographic alignment has not been validated.",
+      "No independent flood-event validation has been performed.",
+      "River levels are not included in this index.",
+      "The index uses rainfall and elevation only; it does not represent all flood-driving factors."
+    ]
+  },
   "elevation_data_quality": {
     "total_records": 16000,
     "without_elevation": 4480,
@@ -340,16 +466,14 @@
   "interpretation": {
     "river_indicator": "High relative levels identify station maxima near the upper end of this dataset. They do not establish official danger levels or prove that flooding occurred.",
     "rainfall_indicator": "The rainfall screening flag identifies days whose maximum grid-cell rainfall reaches the selected screening threshold.",
-    "march_rainfall_findings": "March 1\u20134, 2025 rainfall was analysed separately. The daily maximum rainfall values were 42.60 mm, 78.90 mm, 53.80 mm, and 7.30 mm, respectively. None reached the selected 100 mm screening threshold.",
-    "combined_risk_score": "Not calculated because there are no same-day river observations for the March 1\u20134 rainfall period, and a validated combined scoring method has not been established."
+    "march_rainfall_findings": "March 1-4, 2025 rainfall was analysed separately. The daily maximum rainfall values were 42.60 mm, 78.90 mm, 53.80 mm, and 7.30 mm, respectively. None reached the selected 100 mm screening threshold.",
+    "combined_risk_score": "A preliminary rainfall-elevation screening index has been calculated for March 2025. River levels are not included because this index has not been spatially and temporally integrated with river observations."
   },
   "limitations": [
-    "Rainfall observations cover March 1\u20134, 2025 and August 1\u20134, 2025. River observations are available through March 10, 2025, but there are no river observations for March 1\u20134.",
-    "The available data cannot establish a same-day rainfall-to-river-level relationship for March 1\u20134.",
+    "Rainfall observations cover March 1-4, 2025 and August 1-4, 2025. River observations are available through March 10, 2025, but there are no river observations for March 1-4.",
     "The statistical river threshold is not an official flood-warning level.",
     "The rainfall screening threshold is not an official flood-warning threshold.",
     "Geographic coordinates in the rainfall output require verification before making location-specific map claims.",
-    "The assessment is descriptive and has not been validated as a flood prediction model.",
-    "Rainfall and elevation alone do not account for all flood-driving factors, such as drainage, soil saturation, land use, and river discharge."
+    "The preliminary index is exploratory and has not been validated as a flood prediction model."
   ]
 }
