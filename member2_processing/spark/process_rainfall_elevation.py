@@ -109,7 +109,7 @@ def build_elevation_records(rain_src, elevation_src):
             values = block.compressed()
             values = values[np.isfinite(values)]
 
-            latitude, longitude = rain_src.xy(row, col)
+            longitude, latitude = rain_src.xy(row, col)
 
             if values.size:
                 elevation_mean = float(values.mean())
@@ -178,7 +178,7 @@ def main():
                     if not math.isfinite(value):
                         continue
 
-                    latitude, longitude = src.xy(row, col)
+                    longitude, latitude = src.xy(row, col)
 
                     rainfall_records.append({
                         "date": date,

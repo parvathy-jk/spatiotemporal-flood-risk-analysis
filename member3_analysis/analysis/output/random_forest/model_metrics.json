@@ -1,0 +1,84 @@
+{
+  "model": "Random Forest classifier",
+  "purpose": "Reproduce heuristic screening categories",
+  "target": "risk_category",
+  "features": [
+    "rainfall_mean_mm",
+    "elevation_mean",
+    "elevation_min",
+    "elevation_max",
+    "elevation_coverage"
+  ],
+  "rows_used": 1440,
+  "training_rows": 1316,
+  "testing_rows": 124,
+  "class_distribution": {
+    "Medium": 1161,
+    "High": 235,
+    "Low": 44
+  },
+  "accuracy": 0.9354838709677419,
+  "macro_f1": 0.9272553055228281,
+  "classification_report": {
+    "Low": {
+      "precision": 0.8260869565217391,
+      "recall": 0.95,
+      "f1-score": 0.8837209302325582,
+      "support": 20.0
+    },
+    "Medium": {
+      "precision": 0.984375,
+      "recall": 0.9,
+      "f1-score": 0.9402985074626866,
+      "support": 70.0
+    },
+    "High": {
+      "precision": 0.918918918918919,
+      "recall": 1.0,
+      "f1-score": 0.9577464788732394,
+      "support": 34.0
+    },
+    "accuracy": 0.9354838709677419,
+    "macro avg": {
+      "precision": 0.909793625146886,
+      "recall": 0.9500000000000001,
+      "f1-score": 0.9272553055228281,
+      "support": 124.0
+    },
+    "weighted avg": {
+      "precision": 0.940897035271597,
+      "recall": 0.9354838709677419,
+      "f1-score": 0.9359572129736239,
+      "support": 124.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      19,
+      1,
+      0
+    ],
+    [
+      4,
+      63,
+      3
+    ],
+    [
+      0,
+      0,
+      34
+    ]
+  ],
+  "class_order": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "limitations": [
+    "Labels are heuristic categories, not verified flood labels.",
+    "Evaluation measures reproduction of those categories.",
+    "Random cell-level splitting may overestimate generalization.",
+    "The screening score is not a flood probability.",
+    "Spatial alignment and elevation quality require validation."
+  ]
+}
