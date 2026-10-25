@@ -24,7 +24,7 @@ PROJECT_ROOT = Path.cwd()
 
 RAINFALL_DIR = (
     PROJECT_ROOT
-    / "member1_data/data/processed/march_2025/rainfall_kerala"
+    / "member1_data/data/processed/rainfall_kerala"
 )
 
 ELEVATION_PATH = (
@@ -32,7 +32,7 @@ ELEVATION_PATH = (
     / "member1_data/data/processed/elevation/elevation_kerala_bbox.tif"
 )
 
-OUTPUT_DIR = PROJECT_ROOT / "results/spark/rainfall_elevation_march_2025"
+OUTPUT_DIR = PROJECT_ROOT / "results/spark/rainfall_elevation_sep_oct_2024"
 
 # The rainfall grid is 40 x 50.
 # Verify the elevation-to-rainfall alignment before using this ratio.
@@ -41,11 +41,16 @@ ELEVATION_PIXELS_PER_RAINFALL_CELL = 120
 
 def extract_date(filename):
     """Extract YYYYMMDD from the rainfall filename."""
-    date_part = filename.split("_")[1]
+    for part in filename.split("."):
+        if len(part) >= 8 and part[:8].isdigit():
+            try:
+                return datetime.strptime(
+                    part[:8], "%Y%m%d"
+                ).strftime("%Y-%m-%d")
+            except ValueError:
+                continue
 
-    return datetime.strptime(
-        date_part, "%Y%m%d"
-    ).strftime("%Y-%m-%d")
+    raise ValueError(f"Could not extract date from filename: {filename}")
 
 
 def build_elevation_records(rain_src, elevation_src):
@@ -135,7 +140,7 @@ def build_elevation_records(rain_src, elevation_src):
 def main():
     rainfall_files = sorted(RAINFALL_DIR.glob("*.tif"))
 
-    if len(rainfall_files) != 4:
+    if len(rainfall_files) != 14:
         raise ValueError(
             f"Expected four rainfall GeoTIFFs, found {len(rainfall_files)}"
         )
