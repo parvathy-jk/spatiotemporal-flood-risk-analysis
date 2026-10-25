@@ -14,8 +14,8 @@ RAINFALL_WEIGHT = 0.5
 LOW_ELEVATION_WEIGHT = 0.5
 
 
-def analyse_march_rainfall():
-    """Analyse March 1-4, 2025 rainfall separately from other periods."""
+def analyse_current_rainfall():
+    """Analyse September 21–October 4, 2024 rainfall separately from other periods."""
     client, db = get_database()
 
     try:
@@ -23,8 +23,8 @@ def analyse_march_rainfall():
             {
                 "$match": {
                     "date": {
-                        "$gte": "2025-03-01",
-                        "$lte": "2025-03-04",
+                        "$gte": "2024-09-21",
+                        "$lte": "2024-10-04",
                     }
                 }
             },
@@ -61,7 +61,7 @@ def analyse_march_rainfall():
         ]
 
         return {
-            "period": "2025-03-01 to 2025-03-04",
+            "period": "2024-09-21 to 2024-10-04",
             "daily_summaries": daily_summaries,
             "days_found": len(daily_summaries),
             "days_reaching_100mm_screen": sum(
@@ -80,7 +80,7 @@ def analyse_march_rainfall():
 
 def calculate_preliminary_risk_index():
     """
-    Calculate an exploratory rainfall-elevation index for March 2025.
+    Calculate an exploratory rainfall-elevation index for September–October 2024.
 
     Scores range from 0 to 100. They are relative screening scores,
     not flood probabilities or validated flood predictions.
@@ -91,13 +91,13 @@ def calculate_preliminary_risk_index():
     try:
         collection = db[RAINFALL_COLLECTION]
 
-        # Average rainfall and elevation by grid cell across March 1-4.
+        # Average rainfall and elevation by grid cell across September 21–October 4, 2024.
         pipeline = [
             {
                 "$match": {
                     "date": {
-                        "$gte": "2025-03-01",
-                        "$lte": "2025-03-04",
+                        "$gte": "2024-09-21",
+                        "$lte": "2024-10-04",
                     },
                     "elevation_mean": {"$ne": None},
                     "rainfall_mm": {"$ne": None},
@@ -132,7 +132,7 @@ def calculate_preliminary_risk_index():
         if not records:
             return {
                 "status": "No usable records",
-                "period": "2025-03-01 to 2025-03-04",
+                "period": "2024-09-21 to 2024-10-04",
                 "grid_cells_scored": 0,
                 "top_risk_cells": [],
                 "interpretation": (
@@ -203,7 +203,7 @@ def calculate_preliminary_risk_index():
 
         return {
             "status": "Exploratory screening completed",
-            "period": "2025-03-01 to 2025-03-04",
+            "period": "2024-09-21 to 2024-10-04",
             "grid_cells_scored": len(scored_cells),
             "weights": {
                 "rainfall": RAINFALL_WEIGHT,
@@ -262,8 +262,8 @@ def main():
     print("Analysing rainfall and elevation data...")
     rainfall_report = analyse_rainfall()
 
-    print("Screening March 2025 rainfall separately...")
-    march_rainfall_report = analyse_march_rainfall()
+    print("Screening September–October 2024 rainfall separately...")
+    march_rainfall_report = analyse_current_rainfall()
 
     print("Calculating preliminary rainfall-elevation index...")
     risk_index_report = calculate_preliminary_risk_index()
@@ -305,7 +305,7 @@ def main():
             ),
         },
 
-        "march_2025_rainfall_screening": march_rainfall_report,
+        "current_period_rainfall_screening": march_rainfall_report,
 
         "preliminary_environmental_risk_index": risk_index_report,
 
@@ -324,15 +324,15 @@ def main():
                 "maximum grid-cell rainfall reaches the selected "
                 "screening threshold."
             ),
-            "march_rainfall_findings": (
-                "March 1-4, 2025 rainfall was analysed separately. "
-                "The daily maximum rainfall values were 42.60 mm, "
-                "78.90 mm, 53.80 mm, and 7.30 mm, respectively. "
-                "None reached the selected 100 mm screening threshold."
+            "current_period_rainfall_findings": (
+                "Rainfall was analysed for September 21 to October 4, "
+                "2024. Daily results are reported in rainfall_analysis. "
+                "The 100 mm threshold is a screening criterion, not an "
+                "official flood-warning threshold."
             ),
             "combined_risk_score": (
                 "A preliminary rainfall-elevation screening index has "
-                "been calculated for March 2025. River levels are not "
+                "been calculated for September–October 2024. River levels are not "
                 "included because this index has not been spatially "
                 "and temporally integrated with river observations."
             ),
@@ -340,10 +340,10 @@ def main():
 
         "limitations": [
             (
-                "Rainfall observations cover March 1-4, 2025 and "
-                "August 1-4, 2025. River observations are available "
-                "through March 10, 2025, but there are no river "
-                "observations for March 1-4."
+                "Rainfall observations cover September 21 to October 4, 2024. "
+                "River records span a broader period; temporal and "
+                "spatial alignment must be checked before combining "
+                "river and rainfall observations."
             ),
             (
                 "The statistical river threshold is not an official "
@@ -388,7 +388,7 @@ def main():
         len(heavy_rainfall_days),
     )
 
-    print("\n--- MARCH 2025 RAINFALL SCREENING ---")
+    print("\n--- CURRENT-PERIOD RAINFALL SCREENING ---")
     for item in march_rainfall_report["daily_summaries"]:
         print(
             f"{item['date']}: "
@@ -398,7 +398,7 @@ def main():
         )
 
     print(
-        "March days reaching the 100 mm screening threshold:",
+        "Days reaching the 100 mm screening threshold:",
         march_rainfall_report["days_reaching_100mm_screen"],
     )
 

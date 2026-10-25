@@ -52,32 +52,18 @@ def plot_rainfall_trends(ax, rainfall):
         key=lambda item: item["date"],
     )
 
-    march_daily = [
+    current_daily = [
         item for item in daily
-        if item["date"].startswith("2025-03")
+        if item["date"].startswith(("2024-09", "2024-10"))
     ]
 
-    august_daily = [
-        item for item in daily
-        if item["date"].startswith("2025-08")
-    ]
-
-    if march_daily:
+    if current_daily:
         ax.plot(
-            [item["date"][5:] for item in march_daily],
-            [item["maximum_rainfall_mm"] for item in march_daily],
+            [item["date"][5:] for item in current_daily],
+            [item["maximum_rainfall_mm"] for item in current_daily],
             marker="o",
             linewidth=2,
-            label="March 2025",
-        )
-
-    if august_daily:
-        ax.plot(
-            [item["date"][5:] for item in august_daily],
-            [item["maximum_rainfall_mm"] for item in august_daily],
-            marker="s",
-            linewidth=2,
-            label="August 2025",
+            label="September–October 2024",
         )
 
     ax.axhline(
@@ -119,16 +105,16 @@ def plot_elevation_quality(ax, elevation):
         )
 
 
-def plot_march_summary(ax, march, river, rainfall, risk_index):
+def plot_current_period_summary(ax, current, river, rainfall, risk_index):
     ax.axis("off")
 
-    march_lines = [
+    current_lines = [
         (
             f"{item['date']}: mean "
             f"{item['mean_rainfall_mm']:.2f} mm, "
             f"maximum {item['max_rainfall_mm']:.2f} mm"
         )
-        for item in march["daily_summaries"]
+        for item in current["daily_summaries"]
     ]
 
     risk_status = (
@@ -144,12 +130,12 @@ def plot_march_summary(ax, march, river, rainfall, risk_index):
     )
 
     summary = (
-        "MARCH 2025 RAINFALL SCREENING\n\n"
-        + "\n".join(march_lines)
+        "CURRENT-PERIOD RAINFALL SCREENING\n\n"
+        + "\n".join(current_lines)
         + "\n\n"
         f"Days reaching 100 mm threshold: "
-        f"{march['days_reaching_100mm_screen']} "
-        f"of {march['days_found']}\n\n"
+        f"{current['days_reaching_100mm_screen']} "
+        f"of {current['days_found']}\n\n"
         "OVERALL DATA SUMMARY\n\n"
         f"River stations: {river['stations_analysed']}\n"
         f"High relative-level stations: "
@@ -160,7 +146,7 @@ def plot_march_summary(ax, march, river, rainfall, risk_index):
         f"Status: {risk_status}\n"
         f"Grid cells scored: {scored_cells:,}\n\n"
         "LIMITATIONS\n\n"
-        "• No river observations for March 1–4.\n"
+        "• River and rainfall observations have not been fully spatially integrated.\n"
         "• River levels are not official danger levels.\n"
         "• 100 mm is an internal screening threshold.\n"
         "• Grid coordinates are not verified locations.\n"
@@ -346,7 +332,7 @@ def main():
 
     river = report["river_analysis"]
     rainfall = report["rainfall_analysis"]
-    march = report["march_2025_rainfall_screening"]
+    current = report["current_period_rainfall_screening"]
     elevation = report["elevation_data_quality"]
     risk_index = report.get("preliminary_environmental_risk_index", {})
 
@@ -363,8 +349,8 @@ def main():
     plot_river_indicators(axes[0, 0], river)
     plot_rainfall_trends(axes[0, 1], rainfall)
     plot_elevation_quality(axes[1, 0], elevation)
-    plot_march_summary(
-        axes[1, 1], march, river, rainfall, risk_index
+    plot_current_period_summary(
+        axes[1, 1], current, river, rainfall, risk_index
     )
     plot_top_risk_cells(axes[2, 0], risk_index)
 

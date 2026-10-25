@@ -1,70 +1,118 @@
 {
   "analysis": "Rainfall and elevation analysis",
-  "total_records": 16000,
-  "days_analysed": 8,
+  "total_records": 28000,
+  "days_analysed": 14,
   "heavy_rainfall_screening_threshold_mm": 100.0,
   "threshold_note": "Screening threshold only; not an official flood-warning threshold.",
   "daily_summaries": [
     {
-      "date": "2025-03-01",
-      "average_rainfall_mm": 2.789850001331419,
-      "maximum_rainfall_mm": 42.59999847412109,
+      "date": "2024-09-21",
+      "average_rainfall_mm": 0.476450000975281,
+      "maximum_rainfall_mm": 16.399999618530273,
       "minimum_rainfall_mm": 0.0,
       "grid_cells": 2000,
       "heavy_rainfall_screen": false
     },
     {
-      "date": "2025-03-02",
-      "average_rainfall_mm": 5.426599999096244,
-      "maximum_rainfall_mm": 78.9000015258789,
+      "date": "2024-09-22",
+      "average_rainfall_mm": 3.0193500031158327,
+      "maximum_rainfall_mm": 25.899999618530277,
       "minimum_rainfall_mm": 0.0,
       "grid_cells": 2000,
       "heavy_rainfall_screen": false
     },
     {
-      "date": "2025-03-03",
-      "average_rainfall_mm": 1.193350001823157,
-      "maximum_rainfall_mm": 53.79999923706055,
+      "date": "2024-09-23",
+      "average_rainfall_mm": 8.458450006313623,
+      "maximum_rainfall_mm": 78.69999694824219,
       "minimum_rainfall_mm": 0.0,
       "grid_cells": 2000,
       "heavy_rainfall_screen": false
     },
     {
-      "date": "2025-03-04",
-      "average_rainfall_mm": 0.5823000005744398,
-      "maximum_rainfall_mm": 7.300000190734863,
+      "date": "2024-09-24",
+      "average_rainfall_mm": 6.099999993544072,
+      "maximum_rainfall_mm": 92.5999984741211,
       "minimum_rainfall_mm": 0.0,
       "grid_cells": 2000,
       "heavy_rainfall_screen": false
     },
     {
-      "date": "2025-08-01",
-      "average_rainfall_mm": 15.876500009164214,
-      "maximum_rainfall_mm": 79.19999694824219,
+      "date": "2024-09-25",
+      "average_rainfall_mm": 2.5053499972224236,
+      "maximum_rainfall_mm": 55.79999923706055,
       "minimum_rainfall_mm": 0.0,
       "grid_cells": 2000,
       "heavy_rainfall_screen": false
     },
     {
-      "date": "2025-08-02",
-      "average_rainfall_mm": 16.853649985026568,
-      "maximum_rainfall_mm": 90.6999969482422,
+      "date": "2024-09-26",
+      "average_rainfall_mm": 1.7296000001616776,
+      "maximum_rainfall_mm": 22.299999237060547,
       "minimum_rainfall_mm": 0.0,
       "grid_cells": 2000,
       "heavy_rainfall_screen": false
     },
     {
-      "date": "2025-08-03",
-      "average_rainfall_mm": 23.963599985901265,
-      "maximum_rainfall_mm": 122.6999969482422,
+      "date": "2024-09-27",
+      "average_rainfall_mm": 1.7272500031627716,
+      "maximum_rainfall_mm": 23.700000762939453,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": false
+    },
+    {
+      "date": "2024-09-28",
+      "average_rainfall_mm": 8.609049988299608,
+      "maximum_rainfall_mm": 64.4000015258789,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": false
+    },
+    {
+      "date": "2024-09-29",
+      "average_rainfall_mm": 11.899250002261251,
+      "maximum_rainfall_mm": 107.0999984741211,
       "minimum_rainfall_mm": 0.0,
       "grid_cells": 2000,
       "heavy_rainfall_screen": true
     },
     {
-      "date": "2025-08-04",
-      "average_rainfall_mm": 13.150799999080599,
-      "maximum_rainfall_mm": 144.0,
+      "date": "2024-09-30",
+      "average_rainfall_mm": 4.69169999788329,
+      "maximum_rainfall_mm": 73.4000015258789,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": false
+    },
+    {
+      "date": "2024-10-01",
+      "average_rainfall_mm": 6.003000011600554,
+      "maximum_rainfall_mm": 83.0999984741211,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": false
+    },
+    {
+      "date": "2024-10-02",
+      "average_rainfall_mm": 7.002850004911423,
+      "maximum_rainfall_mm": 76.80000305175781,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": false
+    },
+    {
+      "date": "2024-10-03",
+      "average_rainfall_mm": 2.9532000043913724,
+      "maximum_rainfall_mm": 41.09999847412109,
+      "minimum_rainfall_mm": 0.0,
+      "grid_cells": 2000,
+      "heavy_rainfall_screen": false
+    },
+    {
+      "date": "2024-10-04",
+      "average_rainfall_mm": 10.867950001217425,
+      "maximum_rainfall_mm": 102.0,
       "minimum_rainfall_mm": 0.0,
       "grid_cells": 2000,
       "heavy_rainfall_screen": true
@@ -72,70 +120,70 @@
   ],
   "top_10_rainfall_observations": [
     {
-      "grid_row": 39,
-      "grid_col": 0,
-      "date": "2025-08-04",
-      "rainfall_mm": 144.0
+      "date": "2024-09-29",
+      "grid_row": 27,
+      "grid_col": 20,
+      "rainfall_mm": 107.0999984741211
     },
     {
-      "grid_row": 38,
-      "grid_col": 0,
-      "date": "2025-08-04",
-      "rainfall_mm": 134.5
-    },
-    {
-      "grid_row": 40,
-      "grid_col": 0,
-      "date": "2025-08-04",
-      "rainfall_mm": 133.0
-    },
-    {
-      "grid_row": 40,
-      "grid_col": 1,
-      "date": "2025-08-04",
-      "rainfall_mm": 126.1999969482422
-    },
-    {
-      "grid_row": 32,
-      "grid_col": 0,
-      "date": "2025-08-03",
-      "rainfall_mm": 122.6999969482422
-    },
-    {
-      "grid_row": 32,
-      "grid_col": 1,
-      "date": "2025-08-03",
-      "rainfall_mm": 122.0
-    },
-    {
-      "grid_row": 39,
-      "grid_col": 1,
-      "date": "2025-08-04",
-      "rainfall_mm": 119.9000015258789
-    },
-    {
-      "grid_row": 33,
-      "grid_col": 3,
-      "date": "2025-08-03",
-      "rainfall_mm": 117.6999969482422
-    },
-    {
-      "grid_row": 33,
       "grid_col": 2,
-      "date": "2025-08-03",
-      "rainfall_mm": 117.5999984741211
+      "date": "2024-10-04",
+      "grid_row": 1,
+      "rainfall_mm": 102.0
     },
     {
-      "grid_row": 33,
-      "grid_col": 1,
-      "date": "2025-08-03",
-      "rainfall_mm": 112.6999969482422
+      "date": "2024-09-29",
+      "grid_row": 27,
+      "grid_col": 21,
+      "rainfall_mm": 97.6999969482422
+    },
+    {
+      "date": "2024-09-29",
+      "grid_row": 31,
+      "grid_col": 22,
+      "rainfall_mm": 96.6999969482422
+    },
+    {
+      "grid_col": 9,
+      "date": "2024-09-24",
+      "grid_row": 2,
+      "rainfall_mm": 92.5999984741211
+    },
+    {
+      "grid_col": 8,
+      "date": "2024-09-24",
+      "grid_row": 2,
+      "rainfall_mm": 91.4000015258789
+    },
+    {
+      "grid_col": 8,
+      "date": "2024-09-24",
+      "grid_row": 1,
+      "rainfall_mm": 90.6999969482422
+    },
+    {
+      "date": "2024-09-29",
+      "grid_row": 27,
+      "grid_col": 19,
+      "rainfall_mm": 89.5999984741211
+    },
+    {
+      "date": "2024-09-29",
+      "grid_row": 32,
+      "grid_col": 22,
+      "rainfall_mm": 89.0
+    },
+    {
+      "grid_col": 9,
+      "date": "2024-09-24",
+      "grid_row": 1,
+      "rainfall_mm": 85.0999984741211
     }
   ],
   "elevation_data_quality": {
-    "total_records": 16000,
-    "without_elevation": 4480,
-    "partial_elevation": 952,
-    "complete_elevation": 10568
+    "total_records": 28000,
+    "without_elevation": 7840,
+    "partial_elevation": 1666,
+    "complete_elevation": 18494
   }
 }

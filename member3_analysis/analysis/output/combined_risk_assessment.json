@@ -8,7 +8,7 @@
     "relative_high_level_station_count": 2,
     "relative_high_level_stations": [
       {
-        "average_water_level": 12.345137435897435,
+        "average_water_level": 12.345138119658118,
         "maximum_water_level": 35.731,
         "minimum_water_level": 2.625,
         "records": 585,
@@ -17,7 +17,7 @@
         "district": "PATHANAMTHITTA"
       },
       {
-        "average_water_level": 13.230981441048035,
+        "average_water_level": 13.230982751091704,
         "maximum_water_level": 19.644,
         "minimum_water_level": 1.836,
         "records": 458,
@@ -28,7 +28,7 @@
     ],
     "district_summaries": [
       {
-        "average_water_level": 10.863519344042839,
+        "average_water_level": 10.863520080321285,
         "maximum_water_level": 35.731,
         "minimum_water_level": 0.001,
         "records": 1494,
@@ -52,7 +52,7 @@
         "station_count": 1
       },
       {
-        "average_water_level": 8.592462703252032,
+        "average_water_level": 8.592462804878048,
         "maximum_water_level": 13.761,
         "minimum_water_level": 0.589,
         "records": 984,
@@ -64,7 +64,7 @@
         "station_count": 2
       },
       {
-        "average_water_level": 8.237838245614034,
+        "average_water_level": 8.237838421052631,
         "maximum_water_level": 10.52,
         "minimum_water_level": 3.031,
         "records": 570,
@@ -89,7 +89,7 @@
         "station_count": 3
       },
       {
-        "average_water_level": 5.62477389380531,
+        "average_water_level": 5.624774778761062,
         "maximum_water_level": 10.928,
         "minimum_water_level": 1.407,
         "records": 226,
@@ -100,7 +100,7 @@
         "station_count": 1
       },
       {
-        "average_water_level": 5.4355103044496484,
+        "average_water_level": 5.435509836065574,
         "maximum_water_level": 13.132,
         "minimum_water_level": 0.038,
         "records": 427,
@@ -111,7 +111,7 @@
         "station_count": 1
       },
       {
-        "average_water_level": 4.737888663101605,
+        "average_water_level": 4.737889090909091,
         "maximum_water_level": 8.689,
         "minimum_water_level": 0.001,
         "records": 935,
@@ -123,7 +123,7 @@
         "station_count": 2
       },
       {
-        "average_water_level": 3.9903607159980825,
+        "average_water_level": 3.990360955729583,
         "maximum_water_level": 14.997,
         "minimum_water_level": 0.18,
         "records": 6257,
@@ -146,69 +146,117 @@
     ]
   },
   "rainfall_analysis": {
-    "records_analysed": 16000,
-    "days_analysed": 8,
+    "records_analysed": 28000,
+    "days_analysed": 14,
     "daily_summaries": [
       {
-        "date": "2025-03-01",
-        "average_rainfall_mm": 2.789850001331419,
-        "maximum_rainfall_mm": 42.59999847412109,
+        "date": "2024-09-21",
+        "average_rainfall_mm": 0.476450000975281,
+        "maximum_rainfall_mm": 16.399999618530273,
         "minimum_rainfall_mm": 0.0,
         "grid_cells": 2000,
         "heavy_rainfall_screen": false
       },
       {
-        "date": "2025-03-02",
-        "average_rainfall_mm": 5.426599999096244,
-        "maximum_rainfall_mm": 78.9000015258789,
+        "date": "2024-09-22",
+        "average_rainfall_mm": 3.0193500031158327,
+        "maximum_rainfall_mm": 25.899999618530277,
         "minimum_rainfall_mm": 0.0,
         "grid_cells": 2000,
         "heavy_rainfall_screen": false
       },
       {
-        "date": "2025-03-03",
-        "average_rainfall_mm": 1.193350001823157,
-        "maximum_rainfall_mm": 53.79999923706055,
+        "date": "2024-09-23",
+        "average_rainfall_mm": 8.458450006313623,
+        "maximum_rainfall_mm": 78.69999694824219,
         "minimum_rainfall_mm": 0.0,
         "grid_cells": 2000,
         "heavy_rainfall_screen": false
       },
       {
-        "date": "2025-03-04",
-        "average_rainfall_mm": 0.5823000005744398,
-        "maximum_rainfall_mm": 7.300000190734863,
+        "date": "2024-09-24",
+        "average_rainfall_mm": 6.099999993544072,
+        "maximum_rainfall_mm": 92.5999984741211,
         "minimum_rainfall_mm": 0.0,
         "grid_cells": 2000,
         "heavy_rainfall_screen": false
       },
       {
-        "date": "2025-08-01",
-        "average_rainfall_mm": 15.876500009164214,
-        "maximum_rainfall_mm": 79.19999694824219,
+        "date": "2024-09-25",
+        "average_rainfall_mm": 2.5053499972224236,
+        "maximum_rainfall_mm": 55.79999923706055,
         "minimum_rainfall_mm": 0.0,
         "grid_cells": 2000,
         "heavy_rainfall_screen": false
       },
       {
-        "date": "2025-08-02",
-        "average_rainfall_mm": 16.853649985026568,
-        "maximum_rainfall_mm": 90.6999969482422,
+        "date": "2024-09-26",
+        "average_rainfall_mm": 1.7296000001616776,
+        "maximum_rainfall_mm": 22.299999237060547,
         "minimum_rainfall_mm": 0.0,
         "grid_cells": 2000,
         "heavy_rainfall_screen": false
       },
       {
-        "date": "2025-08-03",
-        "average_rainfall_mm": 23.963599985901265,
-        "maximum_rainfall_mm": 122.6999969482422,
+        "date": "2024-09-27",
+        "average_rainfall_mm": 1.7272500031627716,
+        "maximum_rainfall_mm": 23.700000762939453,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": false
+      },
+      {
+        "date": "2024-09-28",
+        "average_rainfall_mm": 8.609049988299608,
+        "maximum_rainfall_mm": 64.4000015258789,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": false
+      },
+      {
+        "date": "2024-09-29",
+        "average_rainfall_mm": 11.899250002261251,
+        "maximum_rainfall_mm": 107.0999984741211,
         "minimum_rainfall_mm": 0.0,
         "grid_cells": 2000,
         "heavy_rainfall_screen": true
       },
       {
-        "date": "2025-08-04",
-        "average_rainfall_mm": 13.150799999080599,
-        "maximum_rainfall_mm": 144.0,
+        "date": "2024-09-30",
+        "average_rainfall_mm": 4.69169999788329,
+        "maximum_rainfall_mm": 73.4000015258789,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": false
+      },
+      {
+        "date": "2024-10-01",
+        "average_rainfall_mm": 6.003000011600554,
+        "maximum_rainfall_mm": 83.0999984741211,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": false
+      },
+      {
+        "date": "2024-10-02",
+        "average_rainfall_mm": 7.002850004911423,
+        "maximum_rainfall_mm": 76.80000305175781,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": false
+      },
+      {
+        "date": "2024-10-03",
+        "average_rainfall_mm": 2.9532000043913724,
+        "maximum_rainfall_mm": 41.09999847412109,
+        "minimum_rainfall_mm": 0.0,
+        "grid_cells": 2000,
+        "heavy_rainfall_screen": false
+      },
+      {
+        "date": "2024-10-04",
+        "average_rainfall_mm": 10.867950001217425,
+        "maximum_rainfall_mm": 102.0,
         "minimum_rainfall_mm": 0.0,
         "grid_cells": 2000,
         "heavy_rainfall_screen": true
@@ -216,17 +264,17 @@
     ],
     "heavy_rainfall_screening_days": [
       {
-        "date": "2025-08-03",
-        "average_rainfall_mm": 23.963599985901265,
-        "maximum_rainfall_mm": 122.6999969482422,
+        "date": "2024-09-29",
+        "average_rainfall_mm": 11.899250002261251,
+        "maximum_rainfall_mm": 107.0999984741211,
         "minimum_rainfall_mm": 0.0,
         "grid_cells": 2000,
         "heavy_rainfall_screen": true
       },
       {
-        "date": "2025-08-04",
-        "average_rainfall_mm": 13.150799999080599,
-        "maximum_rainfall_mm": 144.0,
+        "date": "2024-10-04",
+        "average_rainfall_mm": 10.867950001217425,
+        "maximum_rainfall_mm": 102.0,
         "minimum_rainfall_mm": 0.0,
         "grid_cells": 2000,
         "heavy_rainfall_screen": true
@@ -234,106 +282,176 @@
     ],
     "top_10_observations": [
       {
-        "grid_row": 39,
-        "grid_col": 0,
-        "date": "2025-08-04",
-        "rainfall_mm": 144.0
+        "date": "2024-09-29",
+        "grid_row": 27,
+        "grid_col": 20,
+        "rainfall_mm": 107.0999984741211
       },
       {
-        "grid_row": 38,
-        "grid_col": 0,
-        "date": "2025-08-04",
-        "rainfall_mm": 134.5
-      },
-      {
-        "grid_row": 40,
-        "grid_col": 0,
-        "date": "2025-08-04",
-        "rainfall_mm": 133.0
-      },
-      {
-        "grid_row": 40,
-        "grid_col": 1,
-        "date": "2025-08-04",
-        "rainfall_mm": 126.1999969482422
-      },
-      {
-        "grid_row": 32,
-        "grid_col": 0,
-        "date": "2025-08-03",
-        "rainfall_mm": 122.6999969482422
-      },
-      {
-        "grid_row": 32,
-        "grid_col": 1,
-        "date": "2025-08-03",
-        "rainfall_mm": 122.0
-      },
-      {
-        "grid_row": 39,
-        "grid_col": 1,
-        "date": "2025-08-04",
-        "rainfall_mm": 119.9000015258789
-      },
-      {
-        "grid_row": 33,
-        "grid_col": 3,
-        "date": "2025-08-03",
-        "rainfall_mm": 117.6999969482422
-      },
-      {
-        "grid_row": 33,
         "grid_col": 2,
-        "date": "2025-08-03",
-        "rainfall_mm": 117.5999984741211
+        "date": "2024-10-04",
+        "grid_row": 1,
+        "rainfall_mm": 102.0
       },
       {
-        "grid_row": 33,
-        "grid_col": 1,
-        "date": "2025-08-03",
-        "rainfall_mm": 112.6999969482422
+        "date": "2024-09-29",
+        "grid_row": 27,
+        "grid_col": 21,
+        "rainfall_mm": 97.6999969482422
+      },
+      {
+        "date": "2024-09-29",
+        "grid_row": 31,
+        "grid_col": 22,
+        "rainfall_mm": 96.6999969482422
+      },
+      {
+        "grid_col": 9,
+        "date": "2024-09-24",
+        "grid_row": 2,
+        "rainfall_mm": 92.5999984741211
+      },
+      {
+        "grid_col": 8,
+        "date": "2024-09-24",
+        "grid_row": 2,
+        "rainfall_mm": 91.4000015258789
+      },
+      {
+        "grid_col": 8,
+        "date": "2024-09-24",
+        "grid_row": 1,
+        "rainfall_mm": 90.6999969482422
+      },
+      {
+        "date": "2024-09-29",
+        "grid_row": 27,
+        "grid_col": 19,
+        "rainfall_mm": 89.5999984741211
+      },
+      {
+        "date": "2024-09-29",
+        "grid_row": 32,
+        "grid_col": 22,
+        "rainfall_mm": 89.0
+      },
+      {
+        "grid_col": 9,
+        "date": "2024-09-24",
+        "grid_row": 1,
+        "rainfall_mm": 85.0999984741211
       }
     ]
   },
-  "march_2025_rainfall_screening": {
-    "period": "2025-03-01 to 2025-03-04",
+  "current_period_rainfall_screening": {
+    "period": "2024-09-21 to 2024-10-04",
     "daily_summaries": [
       {
-        "date": "2025-03-01",
-        "mean_rainfall_mm": 2.79,
-        "max_rainfall_mm": 42.6,
+        "date": "2024-09-21",
+        "mean_rainfall_mm": 0.48,
+        "max_rainfall_mm": 16.4,
         "grid_cells": 2000,
         "reaches_100mm_screen": false
       },
       {
-        "date": "2025-03-02",
-        "mean_rainfall_mm": 5.43,
-        "max_rainfall_mm": 78.9,
+        "date": "2024-09-22",
+        "mean_rainfall_mm": 3.02,
+        "max_rainfall_mm": 25.9,
         "grid_cells": 2000,
         "reaches_100mm_screen": false
       },
       {
-        "date": "2025-03-03",
-        "mean_rainfall_mm": 1.19,
-        "max_rainfall_mm": 53.8,
+        "date": "2024-09-23",
+        "mean_rainfall_mm": 8.46,
+        "max_rainfall_mm": 78.7,
         "grid_cells": 2000,
         "reaches_100mm_screen": false
       },
       {
-        "date": "2025-03-04",
-        "mean_rainfall_mm": 0.58,
-        "max_rainfall_mm": 7.3,
+        "date": "2024-09-24",
+        "mean_rainfall_mm": 6.1,
+        "max_rainfall_mm": 92.6,
         "grid_cells": 2000,
         "reaches_100mm_screen": false
+      },
+      {
+        "date": "2024-09-25",
+        "mean_rainfall_mm": 2.51,
+        "max_rainfall_mm": 55.8,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": false
+      },
+      {
+        "date": "2024-09-26",
+        "mean_rainfall_mm": 1.73,
+        "max_rainfall_mm": 22.3,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": false
+      },
+      {
+        "date": "2024-09-27",
+        "mean_rainfall_mm": 1.73,
+        "max_rainfall_mm": 23.7,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": false
+      },
+      {
+        "date": "2024-09-28",
+        "mean_rainfall_mm": 8.61,
+        "max_rainfall_mm": 64.4,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": false
+      },
+      {
+        "date": "2024-09-29",
+        "mean_rainfall_mm": 11.9,
+        "max_rainfall_mm": 107.1,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": true
+      },
+      {
+        "date": "2024-09-30",
+        "mean_rainfall_mm": 4.69,
+        "max_rainfall_mm": 73.4,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": false
+      },
+      {
+        "date": "2024-10-01",
+        "mean_rainfall_mm": 6.0,
+        "max_rainfall_mm": 83.1,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": false
+      },
+      {
+        "date": "2024-10-02",
+        "mean_rainfall_mm": 7.0,
+        "max_rainfall_mm": 76.8,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": false
+      },
+      {
+        "date": "2024-10-03",
+        "mean_rainfall_mm": 2.95,
+        "max_rainfall_mm": 41.1,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": false
+      },
+      {
+        "date": "2024-10-04",
+        "mean_rainfall_mm": 10.87,
+        "max_rainfall_mm": 102.0,
+        "grid_cells": 2000,
+        "reaches_100mm_screen": true
       }
     ],
-    "days_found": 4,
-    "days_reaching_100mm_screen": 0,
+    "days_found": 14,
+    "days_reaching_100mm_screen": 2,
     "assessment": "Preliminary rainfall screening only. The 100 mm threshold is not an official flood-warning threshold."
   },
   "preliminary_environmental_risk_index": {
     "status": "Exploratory screening completed",
-    "period": "2025-03-01 to 2025-03-04",
+    "period": "2024-09-21 to 2024-10-04",
     "grid_cells_scored": 1440,
     "weights": {
       "rainfall": 0.5,
@@ -346,104 +464,104 @@
     },
     "top_risk_cells": [
       {
-        "grid_row": 44,
-        "grid_col": 27,
-        "average_rainfall_mm": 20.68,
-        "elevation_mean": 0.0,
+        "grid_row": 0,
+        "grid_col": 8,
+        "average_rainfall_mm": 19.71,
+        "elevation_mean": 31.34,
         "rainfall_score": 1.0,
+        "low_elevation_score": 0.986,
+        "preliminary_risk_index": 99.3,
+        "days_observed": 14
+      },
+      {
+        "grid_row": 2,
+        "grid_col": 8,
+        "average_rainfall_mm": 19.25,
+        "elevation_mean": 6.11,
+        "rainfall_score": 0.9764,
+        "low_elevation_score": 0.9973,
+        "preliminary_risk_index": 98.69,
+        "days_observed": 14
+      },
+      {
+        "grid_row": 1,
+        "grid_col": 8,
+        "average_rainfall_mm": 18.95,
+        "elevation_mean": 18.3,
+        "rainfall_score": 0.9612,
+        "low_elevation_score": 0.9919,
+        "preliminary_risk_index": 97.65,
+        "days_observed": 14
+      },
+      {
+        "grid_row": 3,
+        "grid_col": 8,
+        "average_rainfall_mm": 18.72,
+        "elevation_mean": 0.06,
+        "rainfall_score": 0.9496,
         "low_elevation_score": 1.0,
-        "preliminary_risk_index": 100.0,
-        "days_observed": 4
+        "preliminary_risk_index": 97.48,
+        "days_observed": 14
       },
       {
-        "grid_row": 44,
-        "grid_col": 28,
-        "average_rainfall_mm": 20.25,
-        "elevation_mean": 9.33,
-        "rainfall_score": 0.9794,
-        "low_elevation_score": 0.9958,
-        "preliminary_risk_index": 98.76,
-        "days_observed": 4
+        "grid_row": 0,
+        "grid_col": 10,
+        "average_rainfall_mm": 19.09,
+        "elevation_mean": 70.75,
+        "rainfall_score": 0.9681,
+        "low_elevation_score": 0.9685,
+        "preliminary_risk_index": 96.83,
+        "days_observed": 14
       },
       {
-        "grid_row": 18,
-        "grid_col": 16,
-        "average_rainfall_mm": 15.65,
-        "elevation_mean": 0.0,
-        "rainfall_score": 0.757,
-        "low_elevation_score": 1.0,
-        "preliminary_risk_index": 87.85,
-        "days_observed": 4
+        "grid_row": 0,
+        "grid_col": 9,
+        "average_rainfall_mm": 18.47,
+        "elevation_mean": 54.01,
+        "rainfall_score": 0.937,
+        "low_elevation_score": 0.9759,
+        "preliminary_risk_index": 95.65,
+        "days_observed": 14
       },
       {
-        "grid_row": 44,
-        "grid_col": 29,
-        "average_rainfall_mm": 16.05,
-        "elevation_mean": 48.24,
-        "rainfall_score": 0.7763,
-        "low_elevation_score": 0.9785,
-        "preliminary_risk_index": 87.74,
-        "days_observed": 4
+        "grid_row": 1,
+        "grid_col": 9,
+        "average_rainfall_mm": 17.84,
+        "elevation_mean": 49.76,
+        "rainfall_score": 0.9047,
+        "low_elevation_score": 0.9778,
+        "preliminary_risk_index": 94.13,
+        "days_observed": 14
       },
       {
-        "grid_row": 43,
-        "grid_col": 27,
-        "average_rainfall_mm": 15.5,
-        "elevation_mean": 3.44,
-        "rainfall_score": 0.7497,
-        "low_elevation_score": 0.9985,
-        "preliminary_risk_index": 87.41,
-        "days_observed": 4
+        "grid_row": 2,
+        "grid_col": 9,
+        "average_rainfall_mm": 17.75,
+        "elevation_mean": 59.43,
+        "rainfall_score": 0.9004,
+        "low_elevation_score": 0.9735,
+        "preliminary_risk_index": 93.69,
+        "days_observed": 14
       },
       {
-        "grid_row": 43,
-        "grid_col": 28,
-        "average_rainfall_mm": 15.75,
-        "elevation_mean": 39.29,
-        "rainfall_score": 0.7618,
-        "low_elevation_score": 0.9825,
-        "preliminary_risk_index": 87.21,
-        "days_observed": 4
+        "grid_row": 3,
+        "grid_col": 9,
+        "average_rainfall_mm": 16.66,
+        "elevation_mean": 32.37,
+        "rainfall_score": 0.8453,
+        "low_elevation_score": 0.9856,
+        "preliminary_risk_index": 91.54,
+        "days_observed": 14
       },
       {
-        "grid_row": 43,
-        "grid_col": 26,
-        "average_rainfall_mm": 15.32,
-        "elevation_mean": 0.0,
-        "rainfall_score": 0.7412,
-        "low_elevation_score": 1.0,
-        "preliminary_risk_index": 87.06,
-        "days_observed": 4
-      },
-      {
-        "grid_row": 18,
-        "grid_col": 15,
-        "average_rainfall_mm": 15.3,
-        "elevation_mean": 0.0,
-        "rainfall_score": 0.74,
-        "low_elevation_score": 1.0,
-        "preliminary_risk_index": 87.0,
-        "days_observed": 4
-      },
-      {
-        "grid_row": 42,
-        "grid_col": 26,
-        "average_rainfall_mm": 14.37,
-        "elevation_mean": 2.0,
-        "rainfall_score": 0.6953,
-        "low_elevation_score": 0.9991,
-        "preliminary_risk_index": 84.72,
-        "days_observed": 4
-      },
-      {
-        "grid_row": 45,
-        "grid_col": 29,
-        "average_rainfall_mm": 14.28,
-        "elevation_mean": 12.54,
-        "rainfall_score": 0.6904,
-        "low_elevation_score": 0.9944,
-        "preliminary_risk_index": 84.24,
-        "days_observed": 4
+        "grid_row": 0,
+        "grid_col": 7,
+        "average_rainfall_mm": 16.27,
+        "elevation_mean": 0.13,
+        "rainfall_score": 0.8254,
+        "low_elevation_score": 0.9999,
+        "preliminary_risk_index": 91.27,
+        "days_observed": 14
       }
     ],
     "interpretation": "Higher scores indicate higher relative values under this exploratory formula. They are not probabilities of flooding or validated flood-risk predictions.",
@@ -458,19 +576,19 @@
     ]
   },
   "elevation_data_quality": {
-    "total_records": 16000,
-    "without_elevation": 4480,
-    "partial_elevation": 952,
-    "complete_elevation": 10568
+    "total_records": 28000,
+    "without_elevation": 7840,
+    "partial_elevation": 1666,
+    "complete_elevation": 18494
   },
   "interpretation": {
     "river_indicator": "High relative levels identify station maxima near the upper end of this dataset. They do not establish official danger levels or prove that flooding occurred.",
     "rainfall_indicator": "The rainfall screening flag identifies days whose maximum grid-cell rainfall reaches the selected screening threshold.",
-    "march_rainfall_findings": "March 1-4, 2025 rainfall was analysed separately. The daily maximum rainfall values were 42.60 mm, 78.90 mm, 53.80 mm, and 7.30 mm, respectively. None reached the selected 100 mm screening threshold.",
-    "combined_risk_score": "A preliminary rainfall-elevation screening index has been calculated for March 2025. River levels are not included because this index has not been spatially and temporally integrated with river observations."
+    "current_period_rainfall_findings": "Rainfall was analysed for September 21 to October 4, 2024. Daily results are reported in rainfall_analysis. The 100 mm threshold is a screening criterion, not an official flood-warning threshold.",
+    "combined_risk_score": "A preliminary rainfall-elevation screening index has been calculated for September\u2013October 2024. River levels are not included because this index has not been spatially and temporally integrated with river observations."
   },
   "limitations": [
-    "Rainfall observations cover March 1-4, 2025 and August 1-4, 2025. River observations are available through March 10, 2025, but there are no river observations for March 1-4.",
+    "Rainfall observations cover September 21 to October 4, 2024. River records span a broader period; temporal and spatial alignment must be checked before combining river and rainfall observations.",
     "The statistical river threshold is not an official flood-warning level.",
     "The rainfall screening threshold is not an official flood-warning threshold.",
     "Geographic coordinates in the rainfall output require verification before making location-specific map claims.",

@@ -7,7 +7,7 @@
   "threshold_note": "Relative statistical threshold, not an official flood-warning level.",
   "district_summaries": [
     {
-      "average_water_level": 10.863519344042839,
+      "average_water_level": 10.863520080321285,
       "maximum_water_level": 35.731,
       "minimum_water_level": 0.001,
       "records": 1494,
@@ -31,7 +31,7 @@
       "station_count": 1
     },
     {
-      "average_water_level": 8.592462703252032,
+      "average_water_level": 8.592462804878048,
       "maximum_water_level": 13.761,
       "minimum_water_level": 0.589,
       "records": 984,
@@ -43,7 +43,7 @@
       "station_count": 2
     },
     {
-      "average_water_level": 8.237838245614034,
+      "average_water_level": 8.237838421052631,
       "maximum_water_level": 10.52,
       "minimum_water_level": 3.031,
       "records": 570,
@@ -68,7 +68,7 @@
       "station_count": 3
     },
     {
-      "average_water_level": 5.62477389380531,
+      "average_water_level": 5.624774778761062,
       "maximum_water_level": 10.928,
       "minimum_water_level": 1.407,
       "records": 226,
@@ -79,7 +79,7 @@
       "station_count": 1
     },
     {
-      "average_water_level": 5.4355103044496484,
+      "average_water_level": 5.435509836065574,
       "maximum_water_level": 13.132,
       "minimum_water_level": 0.038,
       "records": 427,
@@ -90,7 +90,7 @@
       "station_count": 1
     },
     {
-      "average_water_level": 4.737888663101605,
+      "average_water_level": 4.737889090909091,
       "maximum_water_level": 8.689,
       "minimum_water_level": 0.001,
       "records": 935,
@@ -102,7 +102,7 @@
       "station_count": 2
     },
     {
-      "average_water_level": 3.9903607159980825,
+      "average_water_level": 3.990360955729583,
       "maximum_water_level": 14.997,
       "minimum_water_level": 0.18,
       "records": 6257,
@@ -125,7 +125,7 @@
   ],
   "station_summaries": [
     {
-      "average_water_level": 12.345137435897435,
+      "average_water_level": 12.345138119658118,
       "maximum_water_level": 35.731,
       "minimum_water_level": 2.625,
       "records": 585,
@@ -134,7 +134,7 @@
       "district": "PATHANAMTHITTA"
     },
     {
-      "average_water_level": 13.230981441048035,
+      "average_water_level": 13.230982751091704,
       "maximum_water_level": 19.644,
       "minimum_water_level": 1.836,
       "records": 458,
@@ -143,7 +143,7 @@
       "district": "PATHANAMTHITTA"
     },
     {
-      "average_water_level": 6.537478935698448,
+      "average_water_level": 6.537479157427938,
       "maximum_water_level": 15.0,
       "minimum_water_level": 0.001,
       "records": 451,
@@ -161,7 +161,7 @@
       "district": "Alappuzha"
     },
     {
-      "average_water_level": 11.694721640091116,
+      "average_water_level": 11.694722095671983,
       "maximum_water_level": 14.669,
       "minimum_water_level": 6.4,
       "records": 439,
@@ -170,7 +170,7 @@
       "district": "KOTTAYAM"
     },
     {
-      "average_water_level": 8.291731652173914,
+      "average_water_level": 8.291732,
       "maximum_water_level": 13.761,
       "minimum_water_level": 2.161,
       "records": 575,
@@ -179,7 +179,7 @@
       "district": "ERNAKULAM"
     },
     {
-      "average_water_level": 9.015250855745721,
+      "average_water_level": 9.015250611246945,
       "maximum_water_level": 13.462,
       "minimum_water_level": 0.589,
       "records": 409,
@@ -197,7 +197,7 @@
       "district": "KASARAGOD"
     },
     {
-      "average_water_level": 5.4355103044496484,
+      "average_water_level": 5.435509836065574,
       "maximum_water_level": 13.132,
       "minimum_water_level": 0.038,
       "records": 427,
@@ -206,7 +206,7 @@
       "district": "MALAPPURAM"
     },
     {
-      "average_water_level": 6.7752887931034484,
+      "average_water_level": 6.775289827586207,
       "maximum_water_level": 12.355,
       "minimum_water_level": 0.18,
       "records": 580,
@@ -215,7 +215,7 @@
       "district": "Alappuzha"
     },
     {
-      "average_water_level": 5.62477389380531,
+      "average_water_level": 5.624774778761062,
       "maximum_water_level": 10.928,
       "minimum_water_level": 1.407,
       "records": 226,
@@ -233,7 +233,7 @@
       "district": "KOZHIKODE"
     },
     {
-      "average_water_level": 5.689099133448874,
+      "average_water_level": 5.689098613518198,
       "maximum_water_level": 10.004,
       "minimum_water_level": 0.472,
       "records": 577,
@@ -251,7 +251,7 @@
       "district": "KOTTAYAM"
     },
     {
-      "average_water_level": 6.207672556390977,
+      "average_water_level": 6.207672932330827,
       "maximum_water_level": 9.642,
       "minimum_water_level": 3.031,
       "records": 266,
@@ -260,7 +260,7 @@
       "district": "KOZHIKODE"
     },
     {
-      "average_water_level": 5.256673056994819,
+      "average_water_level": 5.256672538860104,
       "maximum_water_level": 9.221,
       "minimum_water_level": 0.494,
       "records": 579,
@@ -269,7 +269,7 @@
       "district": "Alappuzha"
     },
     {
-      "average_water_level": 5.816473394495413,
+      "average_water_level": 5.816473623853211,
       "maximum_water_level": 8.689,
       "minimum_water_level": 0.149,
       "records": 436,
@@ -278,7 +278,7 @@
       "district": "KANNUR"
     },
     {
-      "average_water_level": 4.607416783216783,
+      "average_water_level": 4.607416083916084,
       "maximum_water_level": 8.092,
       "minimum_water_level": 0.328,
       "records": 572,
@@ -287,7 +287,7 @@
       "district": "Alappuzha"
     },
     {
-      "average_water_level": 3.795477955911824,
+      "average_water_level": 3.7954785571142287,
       "maximum_water_level": 7.471,
       "minimum_water_level": 0.001,
       "records": 499,
@@ -296,7 +296,7 @@
       "district": "KANNUR"
     },
     {
-      "average_water_level": 3.603044230769231,
+      "average_water_level": 3.603043846153846,
       "maximum_water_level": 6.934,
       "minimum_water_level": 0.185,
       "records": 520,
@@ -305,7 +305,7 @@
       "district": "KOTTAYAM"
     },
     {
-      "average_water_level": 4.0873905982905985,
+      "average_water_level": 4.08739094017094,
       "maximum_water_level": 5.41,
       "minimum_water_level": 0.789,
       "records": 585,
@@ -314,7 +314,7 @@
       "district": "Alappuzha"
     },
     {
-      "average_water_level": 3.0190614853195163,
+      "average_water_level": 3.0190625215889466,
       "maximum_water_level": 5.246,
       "minimum_water_level": 0.435,
       "records": 579,
@@ -323,7 +323,7 @@
       "district": "Alappuzha"
     },
     {
-      "average_water_level": 2.602093140794224,
+      "average_water_level": 2.602094584837545,
       "maximum_water_level": 4.746,
       "minimum_water_level": 0.851,
       "records": 554,
@@ -332,7 +332,7 @@
       "district": "Alappuzha"
     },
     {
-      "average_water_level": 2.2437614285714287,
+      "average_water_level": 2.2437610714285716,
       "maximum_water_level": 3.995,
       "minimum_water_level": 0.24,
       "records": 560,
@@ -341,7 +341,7 @@
       "district": "Alappuzha"
     },
     {
-      "average_water_level": 2.5762058823529412,
+      "average_water_level": 2.5762065743944635,
       "maximum_water_level": 3.976,
       "minimum_water_level": 0.613,
       "records": 578,
@@ -350,7 +350,7 @@
       "district": "Alappuzha"
     },
     {
-      "average_water_level": 2.0847355172413793,
+      "average_water_level": 2.0847356896551723,
       "maximum_water_level": 2.841,
       "minimum_water_level": 0.798,
       "records": 580,
@@ -361,7 +361,7 @@
   ],
   "stations_with_high_relative_levels": [
     {
-      "average_water_level": 12.345137435897435,
+      "average_water_level": 12.345138119658118,
       "maximum_water_level": 35.731,
       "minimum_water_level": 2.625,
       "records": 585,
@@ -370,7 +370,7 @@
       "district": "PATHANAMTHITTA"
     },
     {
-      "average_water_level": 13.230981441048035,
+      "average_water_level": 13.230982751091704,
       "maximum_water_level": 19.644,
       "minimum_water_level": 1.836,
       "records": 458,
